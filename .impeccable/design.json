@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T22:33:13.216249+00:00",
+  "title": "Design System: Maple Outdoor Builds",
+  "extensions": {
+    "colorMeta": {
+      "forest-night": {
+        "role": "primary",
+        "displayName": "Forest Night",
+        "tonalRamp": [
+          "oklch(15% 0.04 155)",
+          "oklch(25% 0.04 155)",
+          "oklch(35% 0.04 155)",
+          "oklch(47% 0.04 155)",
+          "oklch(60% 0.04 155)",
+          "oklch(72% 0.04 155)",
+          "oklch(84% 0.04 155)",
+          "oklch(95% 0.04 155)"
+        ]
+      },
+      "forest": {
+        "role": "primary",
+        "displayName": "Forest",
+        "tonalRamp": [
+          "oklch(15% 0.05 155)",
+          "oklch(25% 0.05 155)",
+          "oklch(35% 0.05 155)",
+          "oklch(47% 0.05 155)",
+          "oklch(60% 0.05 155)",
+          "oklch(72% 0.05 155)",
+          "oklch(84% 0.05 155)",
+          "oklch(95% 0.05 155)"
+        ]
+      },
+      "forest-lift": {
+        "role": "primary",
+        "displayName": "Forest Lift",
+        "tonalRamp": [
+          "oklch(15% 0.07 152)",
+          "oklch(25% 0.07 152)",
+          "oklch(35% 0.07 152)",
+          "oklch(47% 0.07 152)",
+          "oklch(60% 0.07 152)",
+          "oklch(72% 0.07 152)",
+          "oklch(84% 0.07 152)",
+          "oklch(95% 0.07 152)"
+        ]
+      },
+      "harvest": {
+        "role": "secondary",
+        "displayName": "Harvest",
+        "tonalRamp": [
+          "oklch(15% 0.07 60)",
+          "oklch(25% 0.07 60)",
+          "oklch(35% 0.07 60)",
+          "oklch(47% 0.07 60)",
+          "oklch(60% 0.07 60)",
+          "oklch(72% 0.07 60)",
+          "oklch(84% 0.07 60)",
+          "oklch(95% 0.07 60)"
+        ]
+      },
+      "maple": {
+        "role": "tertiary",
+        "displayName": "Maple",
+        "tonalRamp": [
+          "oklch(15% 0.15 35)",
+          "oklch(25% 0.15 35)",
+          "oklch(35% 0.15 35)",
+          "oklch(47% 0.15 35)",
+          "oklch(60% 0.15 35)",
+          "oklch(72% 0.15 35)",
+          "oklch(84% 0.15 35)",
+          "oklch(95% 0.15 35)"
+        ]
+      },
+      "maple-bright": {
+        "role": "tertiary",
+        "displayName": "Maple Bright",
+        "tonalRamp": [
+          "oklch(15% 0.13 45)",
+          "oklch(25% 0.13 45)",
+          "oklch(35% 0.13 45)",
+          "oklch(47% 0.13 45)",
+          "oklch(60% 0.13 45)",
+          "oklch(72% 0.13 45)",
+          "oklch(84% 0.13 45)",
+          "oklch(95% 0.13 45)"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Cream",
+        "tonalRamp": [
+          "oklch(15% 0.025 85)",
+          "oklch(25% 0.025 85)",
+          "oklch(35% 0.025 85)",
+          "oklch(47% 0.025 85)",
+          "oklch(60% 0.025 85)",
+          "oklch(72% 0.025 85)",
+          "oklch(84% 0.025 85)",
+          "oklch(95% 0.025 85)"
+        ]
+      },
+      "cream-deep": {
+        "role": "neutral",
+        "displayName": "Cream Deep",
+        "tonalRamp": [
+          "oklch(15% 0.03 85)",
+          "oklch(25% 0.03 85)",
+          "oklch(35% 0.03 85)",
+          "oklch(47% 0.03 85)",
+          "oklch(60% 0.03 85)",
+          "oklch(72% 0.03 85)",
+          "oklch(84% 0.03 85)",
+          "oklch(95% 0.03 85)"
+        ]
+      },
+      "cream-rule": {
+        "role": "neutral",
+        "displayName": "Cream Rule",
+        "tonalRamp": [
+          "oklch(15% 0.035 85)",
+          "oklch(25% 0.035 85)",
+          "oklch(35% 0.035 85)",
+          "oklch(47% 0.035 85)",
+          "oklch(60% 0.035 85)",
+          "oklch(72% 0.035 85)",
+          "oklch(84% 0.035 85)",
+          "oklch(95% 0.035 85)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.03 155)",
+          "oklch(25% 0.03 155)",
+          "oklch(35% 0.03 155)",
+          "oklch(47% 0.03 155)",
+          "oklch(60% 0.03 155)",
+          "oklch(72% 0.03 155)",
+          "oklch(84% 0.03 155)",
+          "oklch(95% 0.03 155)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "tonalRamp": [
+          "oklch(15% 0.025 155)",
+          "oklch(25% 0.025 155)",
+          "oklch(35% 0.025 155)",
+          "oklch(47% 0.025 155)",
+          "oklch(60% 0.025 155)",
+          "oklch(72% 0.025 155)",
+          "oklch(84% 0.025 155)",
+          "oklch(95% 0.025 155)"
+        ]
+      },
+      "cream-on-green": {
+        "role": "neutral",
+        "displayName": "Cream on Green",
+        "tonalRamp": [
+          "oklch(15% 0.025 85)",
+          "oklch(25% 0.025 85)",
+          "oklch(35% 0.025 85)",
+          "oklch(47% 0.025 85)",
+          "oklch(60% 0.025 85)",
+          "oklch(72% 0.025 85)",
+          "oklch(84% 0.025 85)",
+          "oklch(95% 0.025 85)"
+        ]
+      },
+      "sage-muted": {
+        "role": "neutral",
+        "displayName": "Sage Muted",
+        "tonalRamp": [
+          "oklch(15% 0.02 145)",
+          "oklch(25% 0.02 145)",
+          "oklch(35% 0.02 145)",
+          "oklch(47% 0.02 145)",
+          "oklch(60% 0.02 145)",
+          "oklch(72% 0.02 145)",
+          "oklch(84% 0.02 145)",
+          "oklch(95% 0.02 145)"
+        ]
+      },
+      "error-on-green": {
+        "role": "neutral",
+        "displayName": "Error on Green",
+        "tonalRamp": [
+          "oklch(15% 0.1 50)",
+          "oklch(25% 0.1 50)",
+          "oklch(35% 0.1 50)",
+          "oklch(47% 0.1 50)",
+          "oklch(60% 0.1 50)",
+          "oklch(72% 0.1 50)",
+          "oklch(84% 0.1 50)",
+          "oklch(95% 0.1 50)"
+        ]
+      },
+      "board": {
+        "role": "neutral",
+        "displayName": "Board",
+        "tonalRamp": [
+          "oklch(15% 0.09 65)",
+          "oklch(25% 0.09 65)",
+          "oklch(35% 0.09 65)",
+          "oklch(47% 0.09 65)",
+          "oklch(60% 0.09 65)",
+          "oklch(72% 0.09 65)",
+          "oklch(84% 0.09 65)",
+          "oklch(95% 0.09 65)"
+        ]
+      },
+      "board-gap": {
+        "role": "neutral",
+        "displayName": "Board Gap",
+        "tonalRamp": [
+          "oklch(15% 0.03 60)",
+          "oklch(25% 0.03 60)",
+          "oklch(35% 0.03 60)",
+          "oklch(47% 0.03 60)",
+          "oklch(60% 0.03 60)",
+          "oklch(72% 0.03 60)",
+          "oklch(84% 0.03 60)",
+          "oklch(95% 0.03 60)"
+        ]
+      },
+      "print-paper": {
+        "role": "neutral",
+        "displayName": "Print Paper",
+        "tonalRamp": [
+          "oklch(15% 0.012 85)",
+          "oklch(25% 0.012 85)",
+          "oklch(35% 0.012 85)",
+          "oklch(47% 0.012 85)",
+          "oklch(60% 0.012 85)",
+          "oklch(72% 0.012 85)",
+          "oklch(84% 0.012 85)",
+          "oklch(95% 0.012 85)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero h1 only; uppercase, two lines, second in Harvest. Desktop clamp(56px,4.8vw,76px)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2s, uppercase, text-wrap balance."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service rows, step titles, Small jobs welcome."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Copy at 17px (18px from 1024px), 34-44ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Service group headings and print captions, uppercase tracked."
+      }
+    },
+    "shadows": [
+      {
+        "name": "panel-lift",
+        "value": "0 18px 40px -18px rgba(40,25,10,.55)",
+        "purpose": "Boards panel on the cream band."
+      },
+      {
+        "name": "print-on-wood",
+        "value": "0 2px 3px rgba(30,15,5,.35), 0 16px 30px -10px rgba(30,15,5,.6)",
+        "purpose": "Photo prints on boards."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px rgba(240,138,90,.3)",
+        "purpose": "Fields and chips on green, with Maple Bright border."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state",
+        "value": "0.18s",
+        "purpose": "Buttons and service arrow colour/transform."
+      },
+      {
+        "name": "field",
+        "value": "0.15s",
+        "purpose": "Chip and field border colour."
+      },
+      {
+        "name": "press",
+        "value": "scale(.98)",
+        "purpose": "Button :active."
+      },
+      {
+        "name": "hero-sweep",
+        "value": "HERO{density:1/2300,densityDesk:1/3600,maxLeaves:260,phoneMax:90,refill:5,trickle:0.35,fallSpeed:34,wind:14,radius:84,push:2600,carry:0.55,lift:220,gravity:420,groundFric:3.2,airFric:1.0,gustEvery:[4.5,7.5],gustPush:220,gustIdle:9}",
+        "purpose": "Hero leaf physics."
+      },
+      {
+        "name": "resting-spring",
+        "value": "SPRING{k:38,damp:6.5,radius:90,push:1500,carry:0.35}",
+        "purpose": "Boards panel and edge strip leaves."
+      },
+      {
+        "name": "loop",
+        "value": "single rAF, dt<=0.05s, IntersectionObserver pause",
+        "purpose": "All canvas scenes; stops off screen; reduced motion disables gusts/refill."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tight",
+        "value": "374px",
+        "dir": "max"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Cream Button",
+      "kind": "button",
+      "refersTo": "button-cream",
+      "description": "Primary CTA on green grounds.",
+      "html": "<div class=\"ds-green-ground\"><a class=\"ds-btn ds-btn-cream\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z\"/></svg>Text for a free estimate</a></div>",
+      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 24px;border-radius:999px;border:2px solid transparent;font:800 17px/1.2 var(--font);text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s,transform .18s}.ds-btn:active{transform:scale(.98)}.ds-btn svg{width:20px;height:20px}.ds-green-ground{background:var(--green-800);padding:24px;display:flex;gap:10px;flex-wrap:wrap}.ds-green-ground :focus-visible{outline:3px solid var(--maple-bright);outline-offset:3px}.ds-btn-cream{background:var(--cream);color:var(--green-800);border-color:var(--cream)}.ds-btn-cream:hover{background:#fff;border-color:#fff}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action on green grounds.",
+      "html": "<div class=\"ds-green-ground\"><a class=\"ds-btn ds-btn-line\" href=\"#\">See our work</a></div>",
+      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 24px;border-radius:999px;border:2px solid transparent;font:800 17px/1.2 var(--font);text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s,transform .18s}.ds-btn:active{transform:scale(.98)}.ds-btn svg{width:20px;height:20px}.ds-green-ground{background:var(--green-800);padding:24px;display:flex;gap:10px;flex-wrap:wrap}.ds-green-ground :focus-visible{outline:3px solid var(--maple-bright);outline-offset:3px}.ds-btn-line{background:transparent;color:var(--cream);border-color:rgba(245,239,226,.55)}.ds-btn-line:hover{border-color:var(--cream);background:rgba(245,239,226,.08)}"
+    },
+    {
+      "name": "Green Button",
+      "kind": "button",
+      "refersTo": "button-green",
+      "description": "Action on cream grounds.",
+      "html": "<a class=\"ds-btn ds-btn-green\" href=\"#\">Click to see more of our work</a>",
+      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 24px;border-radius:999px;border:2px solid transparent;font:800 17px/1.2 var(--font);text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s,transform .18s}.ds-btn:active{transform:scale(.98)}.ds-btn svg{width:20px;height:20px}.ds-green-ground{background:var(--green-800);padding:24px;display:flex;gap:10px;flex-wrap:wrap}.ds-green-ground :focus-visible{outline:3px solid var(--maple-bright);outline-offset:3px}.ds-btn-green{background:var(--green-800);color:var(--cream);border-color:var(--green-800)}.ds-btn-green:hover{background:var(--green-600);border-color:var(--green-600)}.ds-btn-green:focus-visible{outline:3px solid var(--maple);outline-offset:3px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-arrow",
+      "description": "Text-a-quote list row; only the arrow disc changes on hover/focus.",
+      "html": "<div class=\"ds-rows\"><h3 class=\"ds-group\">Decks</h3><a class=\"ds-row\" href=\"#\">Deck repairs<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a><a class=\"ds-row\" href=\"#\">New decks<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></div>",
+      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-rows{background:var(--cream);padding:20px;font-family:var(--font)}.ds-group{margin:0;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:800;padding-bottom:10px;border-bottom:2px solid var(--ink)}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:10px 0;border-bottom:1px solid var(--cream-ink);text-decoration:none;font-size:22px;font-weight:750;color:var(--ink);outline:none}.ds-arrow{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--cream-2);color:var(--ink);transition:background-color .18s,color .18s}.ds-arrow svg{width:18px;height:18px}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:var(--maple);color:#fff}.ds-row:focus-visible .ds-arrow{outline:3px solid var(--maple);outline-offset:3px}"
+    },
+    {
+      "name": "Job Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Multi-select job type on the green quote form.",
+      "html": "<div class=\"ds-green-ground\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Deck repair</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>New deck</span></label></div>",
+      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-chip{position:relative;font-family:var(--font)}.ds-chip input{position:absolute;opacity:0;width:1px;height:1px}.ds-chip span{display:flex;align-items:center;min-height:46px;padding:10px 16px;border-radius:999px;border:2px solid rgba(245,239,226,.35);color:var(--cream);font-weight:700;font-size:17px;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chip:hover span,.ds-chip input:focus-visible+span{border-color:var(--maple-bright)}.ds-chip input:focus-visible+span{box-shadow:0 0 0 3px rgba(240,138,90,.35)}.ds-chip input:checked+span{background:var(--cream);color:var(--green-800);border-color:var(--cream)}.ds-chip input:checked+span::before{content:\"\";width:16px;height:16px;margin-right:8px;background:var(--maple);-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-45 -52 90 90'%3E%3Cpath d='M0-50L7-37L13-40L11-18L22-28L25-22L36-25L33-12L42-8L27 2L30 8L15 9L12 15L16 20L3 16L3 34L-3 34L-3 16L-16 20L-12 15L-15 9L-30 8L-27 2L-42-8L-33-12L-36-25L-25-22L-22-28L-11-18L-13-40L-7-37Z'/%3E%3C/svg%3E\") center/contain no-repeat;mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-45 -52 90 90'%3E%3Cpath d='M0-50L7-37L13-40L11-18L22-28L25-22L36-25L33-12L42-8L27 2L30 8L15 9L12 15L16 20L3 16L3 34L-3 34L-3 16L-16 20L-12 15L-15 9L-30 8L-27 2L-42-8L-33-12L-36-25L-25-22L-22-28L-11-18L-13-40L-7-37Z'/%3E%3C/svg%3E\") center/contain no-repeat}.ds-chip:hover input:checked+span{border-color:var(--maple-bright)}"
+    },
+    {
+      "name": "Text Field on Green",
+      "kind": "input",
+      "refersTo": "input-on-green",
+      "description": "Quote form field; outlined by border colour on hover/focus.",
+      "html": "<div class=\"ds-green-ground\" style=\"display:block\"><label class=\"ds-lbl\" for=\"ds-w\">Where is the job?</label><input class=\"ds-input\" id=\"ds-w\" type=\"text\" placeholder=\"Town or street, e.g. Rothesay\"></div>",
+      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-lbl{display:block;font:800 17px/1.4 var(--font);color:var(--cream);margin-bottom:10px}.ds-input{width:100%;box-sizing:border-box;min-height:54px;padding:14px 16px;border-radius:12px;border:2px solid rgba(245,239,226,.35);background:rgba(10,25,16,.35);color:var(--cream);font:500 17px/1.4 var(--font);caret-color:var(--maple-bright);transition:border-color .15s}.ds-input::placeholder{color:#a6b3a8}.ds-input:hover,.ds-input:focus{border-color:var(--maple-bright);outline:none}.ds-input:focus{box-shadow:0 0 0 3px rgba(240,138,90,.3)}"
+    },
+    {
+      "name": "Header Bar",
+      "kind": "nav",
+      "description": "Brand lockup left, phone link right, on forest.",
+      "html": "<div class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><svg viewBox=\"-50 -56 100 100\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0-50L7-37L13-40L11-18L22-28L25-22L36-25L33-12L42-8L27 2L30 8L15 9L12 15L16 20L3 16L3 34L-3 34L-3 16L-16 20L-12 15L-15 9L-30 8L-27 2L-42-8L-33-12L-36-25L-25-22L-22-28L-11-18L-13-40L-7-37Z\" transform=\"translate(0 -6) scale(.78)\"/><path d=\"M-46 36L0 4L46 36\" fill=\"none\" stroke=\"#173524\" stroke-width=\"11\"/><path d=\"M-44 38L0 8L44 38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/></svg><span><b>MAPLE</b><small>OUTDOOR BUILDS</small></span></a><a class=\"ds-phone\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1z\"/></svg>506-607-1818</a></div>",
+      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;background:var(--green-800);font-family:var(--font)}.ds-brand{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:var(--cream)}.ds-brand svg{width:40px;height:40px}.ds-brand b{display:block;font-weight:900;font-size:22px;letter-spacing:.04em;line-height:1}.ds-brand small{display:block;font-weight:700;font-size:10.5px;letter-spacing:.22em;line-height:1;margin-top:4px;opacity:.85}.ds-phone{display:flex;align-items:center;gap:7px;min-height:44px;color:var(--cream);font-weight:800;font-size:16px;text-decoration:none;font-variant-numeric:tabular-nums}.ds-phone svg{width:17px;height:17px;color:#e9b48f}.ds-phone:hover{color:#fff}.ds-phone:hover svg{color:var(--maple-bright)}.ds-phone:focus-visible{outline:3px solid var(--maple-bright);outline-offset:3px}"
+    },
+    {
+      "name": "Prints on Boards",
+      "kind": "card",
+      "description": "Photos laid on deck boards as rotated paper prints (CSS stripe fallback; the live build paints the boards on canvas).",
+      "html": "<div class=\"ds-boards\"><figure class=\"ds-print ds-p1\"><div class=\"ds-ph\"></div><figcaption>Before</figcaption></figure><figure class=\"ds-print ds-p2\"><div class=\"ds-ph\"></div><figcaption>After</figcaption></figure></div>",
+      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-boards{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:28px 22px 34px;border-radius:14px;background:#2b1d12 repeating-linear-gradient(180deg,#a8743f 0 37px,#2b1d12 37px 40px);box-shadow:0 18px 40px -18px rgba(40,25,10,.55)}.ds-print{margin:0;background:#fbf8f1;padding:9px 9px 0;border-radius:3px;box-shadow:0 2px 3px rgba(30,15,5,.35),0 16px 30px -10px rgba(30,15,5,.6)}.ds-ph{aspect-ratio:720/660;background:#cdbd9e}.ds-print figcaption{padding:7px 4px 9px;font:900 15px/1.2 var(--font);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}.ds-p1{transform:rotate(-2.2deg)}.ds-p2{transform:rotate(1.8deg)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The October Deck",
+    "overview": "A Saint John deck in autumn: fresh pressure-treated boards, maple leaves that keep falling on them, and a crew that sweeps them off. The material is the brand. Boards are painted live on canvas, leaves are physical objects you can push, and the page's two grounds are the forest green and cream of the company's own profile art (leaf over roofline). Everything else stays quiet so the deck can be the thing you touch.\n\nDensity is phone-first and generous: one column, big tap targets (44px minimum, 56px buttons), short uppercase headings set heavy. Colour is restrained; green and cream carry the page, harvest amber picks out the second line of headings on green, and maple red appears only when the visitor is pointing at something.",
+    "keyCharacteristics": [
+      "Two grounds: forest green (hero, close, footer) and cream (content). No third surface besides the boards.",
+      "Real material, drawn in code: canvas deck boards with grain, knots, screws, butt joints and sunlight.",
+      "Maple leaves as interactive sprites, in nine autumn colourways.",
+      "Maple red is a state colour, never a resting colour.",
+      "Heavy uppercase system type; no web fonts."
+    ],
+    "rules": [
+      {
+        "name": "The Maple Is A Hand Rule",
+        "body": "Maple red (#c8442a on cream, #f08a5a on green) appears only on hover, focus, selection, or as the small leaf mark. Nothing rests in red. Use the bright variant on green, the deep one on cream (`.on-green` swaps the focus colour).",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Grounds Rule",
+        "body": "Sections are either forest or cream. Wood is the only other surface, and it is always boards.",
+        "section": "colors"
+      },
+      {
+        "name": "The Heavy Caps Rule",
+        "body": "All h1-h3 are uppercase, 900, letter-spacing -0.01em, leading under 1. Weight contrast (900 against 400) is the hierarchy; do not add a second family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Only Things That Cast Shadows Rule",
+        "body": "Shadows are for objects on the deck (prints, leaves, the boards themselves). Buttons, rows and fields never cast one.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep every surface forest, cream, or boards.",
+      "Do reserve Maple (#c8442a) and Maple Bright (#f08a5a) for hover, focus, selection and the leaf mark.",
+      "Do set headings 900 uppercase with leading under 1, and take the second line to Harvest (#e9b48f) on green.",
+      "Do put photos on the boards as rotated prints, never as bare tiles.",
+      "Do run new canvas scenes through the shared Scene and loop so they pause off screen.",
+      "Do keep tap targets at 44px minimum and primary buttons at 56px."
+    ],
+    "donts": [
+      "Don't put red on anything at rest, including headings, badges or backgrounds.",
+      "Don't change a service row's background or outline on hover; the arrow is the only change.",
+      "Don't ring form fields with an outline; they change border colour and gain the soft halo.",
+      "Don't give buttons, rows or fields shadows.",
+      "Don't add a web font or a second family."
+    ]
+  }
+}
