@@ -666,7 +666,7 @@ var heroScene=null;
       lastTouch=now; if(!touched&&speed>40){touched=true; hint.classList.add('gone');}
     }
     P.lastX=P.x; P.lastY=P.y;
-    var rad=HERO.radius*(PHONE_W.matches?1:1.2), rad2=rad*rad;
+    var rad=HERO.radius*(PHONE_W.matches?1:1.4), rad2=rad*rad;
     // wind gusts play the job until someone takes over
     if(!gust&&now-lastTouch>HERO.gustIdle*1000){ nextGust-=dt; if(nextGust<=0){
       var dir=R()<0.5?1:-1; gust={x:dir>0?-160:S.w+160,dir:dir,y:S.h*(0.15+R()*0.7),band:S.h*(0.35+R()*0.3),speed:(S.w+320)/(1.8+R()*0.9),k:0.9+R()*0.4};
