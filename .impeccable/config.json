@@ -200,6 +200,42 @@
         ],
         "createdAt": "2026-10-17T22:34:58.407Z",
         "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "26px",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:35:08.641Z",
+        "reason": "Agent judgment: clamp endpoints of the service-area line and desktop hero headline; intentional one-offs"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "40px",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:35:08.712Z",
+        "reason": "Agent judgment: clamp endpoints of the service-area line and desktop hero headline; intentional one-offs"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "56px",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:35:08.781Z",
+        "reason": "Agent judgment: clamp endpoints of the service-area line and desktop hero headline; intentional one-offs"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "76px",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:35:08.852Z",
+        "reason": "Agent judgment: clamp endpoints of the service-area line and desktop hero headline; intentional one-offs"
       }
     ]
   }
