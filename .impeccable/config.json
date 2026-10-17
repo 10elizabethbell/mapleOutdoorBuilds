@@ -29,6 +29,15 @@
         ],
         "createdAt": "2026-10-17T22:24:30.399Z",
         "reason": "Literal deck boards: no-JS/pre-paint fallback for the canvas deck, same material as the painted boards"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:25:44.431Z",
+        "reason": "Agent judgment: detector reads only fixed px sizes (15-22px body/labels); hierarchy comes from clamp() display headings at 34-96px"
       }
     ]
   }

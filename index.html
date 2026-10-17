@@ -64,7 +64,8 @@ p{margin:0}
 .brand{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:var(--cream)}
 .brand svg{width:40px;height:40px;flex:none}
 .brand b{display:block;font-weight:900;font-size:22px;letter-spacing:.04em;line-height:1}
-.brand small{display:block;font-weight:700;font-size:10.5px;letter-spacing:.22em;line-height:1;margin-top:4px;opacity:.85}
+.brand small{display:block;font-weight:700;font-size:10.5px;letter-spacing:.22em;line-height:1;margin-top:4px;opacity:.85;white-space:nowrap}
+@media (max-width:374px){.brand{gap:8px}.brand svg{width:34px;height:34px}.brand b{font-size:20px}.brand small{letter-spacing:.12em;font-size:9.5px}.phone{font-size:15px;gap:5px}.top{gap:6px}}
 .phone{display:flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;color:var(--cream);font-weight:800;font-size:16px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
 .phone svg{width:17px;height:17px;flex:none;color:#e9b48f}
 .phone:hover{color:#fff}
@@ -75,6 +76,7 @@ p{margin:0}
 .hero-copy{padding:26px var(--gutter) 26px;max-width:1180px;width:100%;margin:0 auto}
 .hero h1{font-size:clamp(44px,13.4vw,92px);line-height:.92;letter-spacing:-.015em}
 .hero h1 span{display:block;color:#e9b48f}
+.hero h1 .l1{color:inherit}
 .promise{margin-top:16px;font-size:clamp(17px,4.4vw,20px);line-height:1.5;max-width:34ch;color:#e4dccb}
 .cta{display:grid;gap:10px;margin-top:22px}
 .deck{position:relative;flex:1;min-height:250px;overflow:hidden;
@@ -96,7 +98,7 @@ p{margin:0}
 .arrow svg{width:18px;height:18px}
 .row:hover .arrow,.row:focus-visible .arrow{background:var(--maple);color:#fff}
 .row:focus-visible .arrow{outline:3px solid var(--maple);outline-offset:3px}
-.small-jobs{margin-top:30px;font-size:22px;font-weight:900;text-transform:uppercase;letter-spacing:.01em}
+.small-jobs{margin-top:14px;font-size:22px;font-weight:900;text-transform:uppercase;letter-spacing:.01em}
 .small-jobs::after{content:"";display:inline-block;width:.8em;height:.8em;margin-left:.3em;vertical-align:-.06em;background:var(--maple);
   -webkit-mask:var(--leaf) center/contain no-repeat;mask:var(--leaf) center/contain no-repeat}
 :root{--leaf:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-45 -52 90 90'%3E%3Cpath d='M0-50L7-37L13-40L11-18L22-28L25-22L36-25L33-12L42-8L27 2L30 8L15 9L12 15L16 20L3 16L3 34L-3 34L-3 16L-16 20L-12 15L-15 9L-30 8L-27 2L-42-8L-33-12L-36-25L-25-22L-22-28L-11-18L-13-40L-7-37Z'/%3E%3C/svg%3E")}
@@ -106,7 +108,7 @@ p{margin:0}
 .boards{position:relative;margin-top:28px;border-radius:var(--radius);overflow:hidden;background:#2b1d12 repeating-linear-gradient(180deg,#a8743f 0 37px,#2b1d12 37px 40px);box-shadow:0 18px 40px -18px rgba(40,25,10,.55)}
 .boards canvas{position:absolute;inset:0;width:100%;height:100%}
 .prints{position:relative;display:grid;gap:22px;padding:28px 22px 34px;pointer-events:none}
-.print{background:#fbf8f1;padding:9px 9px 0;border-radius:3px;box-shadow:0 2px 3px rgba(30,15,5,.35),0 16px 30px -10px rgba(30,15,5,.6);width:88%}
+.print{margin:0;background:#fbf8f1;padding:9px 9px 0;border-radius:3px;box-shadow:0 2px 3px rgba(30,15,5,.35),0 16px 30px -10px rgba(30,15,5,.6);width:88%}
 .print img{width:100%;height:auto;aspect-ratio:720/660;object-fit:cover;background:#cdbd9e;-webkit-user-drag:none;user-select:none}
 .print figcaption{padding:7px 4px 9px;font-weight:900;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
 .print.p1{transform:rotate(-2.2deg)}
@@ -120,7 +122,7 @@ p{margin:0}
 /* ---------- steps ---------- */
 .how{padding:64px 0 24px}
 .steps{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:26px;counter-reset:s}
-.steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 16px;align-items:start}
+.steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 16px;align-items:start;align-content:start}
 .steps li::before{counter-increment:s;content:counter(s);grid-row:span 2;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--green-800);color:var(--cream);font-weight:900;font-size:22px}
 .steps h3{font-size:22px;padding-top:4px}
 .steps p{color:var(--ink-soft);max-width:44ch}
@@ -160,7 +162,7 @@ input[type=text]:focus,textarea:focus{box-shadow:0 0 0 3px rgba(240,138,90,.3)}
 .send .btn{width:100%;border-color:var(--cream)}
 .send .btn:hover,.send .btn:focus-visible{border-color:var(--maple-bright)}
 .send p{margin-top:12px;font-size:15px;color:#bfc9bd}
-.send p a{color:var(--cream);font-weight:700;text-underline-offset:3px;display:inline-block;padding:12px 0;margin:-12px 0}
+.send .num{color:var(--cream);font-weight:700;user-select:all;-webkit-user-select:all;white-space:nowrap}
 
 /* ---------- footer ---------- */
 footer{background:var(--green-900);color:#cfd6cc;padding:44px 0 calc(44px + env(safe-area-inset-bottom))}
@@ -174,9 +176,14 @@ footer .brand{color:var(--cream)}
 .fine{margin-top:26px;padding-top:18px;border-top:1px solid rgba(245,239,226,.14);font-size:15px;color:#a9b5ab}
 
 /* ---------- wider ---------- */
+@media (max-width:1023px){
+  .hero{min-height:0}
+  .deck{flex:none;height:clamp(240px,40svh,340px)}
+}
 @media (min-width:640px){
   :root{--gutter:32px}
-  .cta{grid-template-columns:auto auto;justify-content:start}
+  .cta{display:flex;flex-wrap:wrap;justify-content:flex-start}
+  .cta .btn{white-space:nowrap}
   .prints{grid-template-columns:1fr 1fr;padding:34px 30px 40px;gap:26px}
   .print{width:100%}
   .print.p3{grid-column:1/-1;width:70%}
@@ -190,10 +197,11 @@ footer .brand{color:var(--cream)}
   .brand b{font-size:26px}
   .brand small{font-size:12px}
   .phone{font-size:18px}
-  .hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);grid-template-rows:auto 1fr;min-height:min(100svh,880px)}
-  .hero .top{grid-column:1/-1;max-width:none;width:100%;margin:0;padding-left:max(var(--gutter),calc((100vw - 1180px)/2 + var(--gutter)))}
+  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto 1fr;min-height:min(100svh,880px)}
+  .hero .top{grid-column:1/-1;max-width:none;width:100%;margin:0;padding-left:max(var(--gutter),calc((100vw - 1180px)/2 + var(--gutter)));padding-right:max(var(--gutter),calc((100vw - 1180px)/2 + var(--gutter)))}
   .hero-copy{align-self:center;padding:40px 40px 80px max(var(--gutter),calc((100vw - 1180px)/2 + var(--gutter)));margin:0}
-  .hero h1{font-size:clamp(64px,6.6vw,96px)}
+  .hero h1{font-size:clamp(56px,4.8vw,76px)}
+  .hero h1 span{white-space:nowrap}
   .deck{margin:22px 0 0;border-top-left-radius:28px;min-height:560px}
   .deck::before{display:none}
   .hint{padding-left:32px}
@@ -211,7 +219,7 @@ footer .brand{color:var(--cream)}
   .close{padding:90px 0 100px}
   .close .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:60px;align-items:start}
   form{margin-top:0}
-  .foot{grid-template-columns:2fr 1fr 1fr;align-items:start}
+  .foot{grid-template-columns:2fr 1fr;align-items:start}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.chip span,.arrow{transition:none}}
 </style>
@@ -234,7 +242,7 @@ FORM: Single file, system type set heavy and uppercase for display; green ground
     <a class="phone" href="tel:+15066071818"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1z"/></svg>506-607-1818</a>
   </div>
   <div class="hero-copy">
-    <h1>Built right. <span>Left clean.</span></h1>
+    <h1><span class="l1">Built right.</span> <span>Left clean.</span></h1>
     <p class="promise">Quality work, one project at a time. We look after your deck and yard like they're our own, and small jobs are always welcome.</p>
     <div class="cta">
       <a class="btn btn-cream" id="heroText" href="sms:+15066071818?&body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate."><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Text for a free estimate</a>
@@ -250,27 +258,29 @@ FORM: Single file, system type set heavy and uppercase for display; green ground
 <main>
   <section class="services" id="services">
     <div class="wrap">
-      <h2>What we do</h2>
+      <div>
+        <h2>What we do</h2>
+        <p class="small-jobs">Small jobs welcome</p>
+      </div>
       <div>
         <div class="groups">
           <div class="group">
             <h3>Decks</h3>
             <ul class="rows" data-group="decks">
-              <li><a class="row" data-svc="deck repairs" href="#">Deck repairs<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-              <li><a class="row" data-svc="a new deck" href="#">New decks<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-              <li><a class="row" data-svc="stairs and railings" href="#">Stairs &amp; railings<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-              <li><a class="row" data-svc="a deck extension" href="#">Extensions<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-              <li><a class="row" data-svc="deck resurfacing" href="#">Resurfacing<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+              <li><a class="row" data-svc="deck repairs" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20deck%20repairs.%20The%20job%20is%20in%3A%20">Deck repairs<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+              <li><a class="row" data-svc="a new deck" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20a%20new%20deck.%20The%20job%20is%20in%3A%20">New decks<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+              <li><a class="row" data-svc="stairs and railings" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20stairs%20and%20railings.%20The%20job%20is%20in%3A%20">Stairs &amp; railings<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+              <li><a class="row" data-svc="a deck extension" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20a%20deck%20extension.%20The%20job%20is%20in%3A%20">Extensions<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+              <li><a class="row" data-svc="deck resurfacing" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20deck%20resurfacing.%20The%20job%20is%20in%3A%20">Resurfacing<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
             </ul>
           </div>
           <div class="group">
             <h3>Yards &amp; cleanups</h3>
             <ul class="rows">
-              <li><a class="row" data-svc="a property cleanup" href="#">Property cleanups<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-              <li><a class="row" data-svc="yard cleanup and removal" href="#">Yard cleanup &amp; removal<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-              <li><a class="row" data-svc="junk removal and hauling" href="#">Junk removal &amp; hauling<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+              <li><a class="row" data-svc="a property cleanup" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20a%20property%20cleanup.%20The%20job%20is%20in%3A%20">Property cleanups<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+              <li><a class="row" data-svc="yard cleanup and removal" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20yard%20cleanup%20and%20removal.%20The%20job%20is%20in%3A%20">Yard cleanup &amp; removal<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+              <li><a class="row" data-svc="junk removal and hauling" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20junk%20removal%20and%20hauling.%20The%20job%20is%20in%3A%20">Junk removal &amp; hauling<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
             </ul>
-            <p class="small-jobs">Small jobs welcome</p>
           </div>
         </div>
       </div>
@@ -319,8 +329,8 @@ FORM: Single file, system type set heavy and uppercase for display; green ground
   <section class="close on-green" id="quote">
     <div class="wrap">
       <div>
-        <h2>Let's build <span>something great.</span></h2>
-        <p class="lead">Tell us what needs doing and we'll get back to you with a free estimate.</p>
+        <h2>Send us <span>a photo.</span></h2>
+        <p class="lead">Pick what you need, add a photo in the text, and we'll get back to you with a free estimate.</p>
       </div>
       <form id="quoteForm" novalidate>
         <fieldset id="jobField">
@@ -333,12 +343,12 @@ FORM: Single file, system type set heavy and uppercase for display; green ground
             <label class="chip"><input type="checkbox" name="job" value="Junk removal"><span>Junk removal</span></label>
             <label class="chip"><input type="checkbox" name="job" value="Something else"><span>Something else</span></label>
           </div>
-          <p class="err" id="jobErr">Pick at least one, or choose "Something else".</p>
+          <p class="err" id="jobErr" aria-live="polite">Pick at least one, or choose "Something else".</p>
         </fieldset>
         <div id="whereField">
           <label class="lbl" for="where">Where is the job?</label>
-          <input type="text" id="where" name="where" autocomplete="address-level2" placeholder="Town or street, e.g. Rothesay">
-          <p class="err" id="whereErr">Add the town so we know where to come.</p>
+          <input type="text" id="where" name="where" aria-describedby="whereErr" autocomplete="address-level2" placeholder="Town or street, e.g. Rothesay">
+          <p class="err" id="whereErr" aria-live="polite">Add the town so we know where to come.</p>
         </div>
         <div>
           <label class="lbl" for="details">Anything else? <span class="opt">(optional)</span></label>
@@ -350,7 +360,7 @@ FORM: Single file, system type set heavy and uppercase for display; green ground
         </div>
         <div class="send">
           <button class="btn btn-cream" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Text this to us</button>
-          <p>Opens your messages with this written out. Add photos before you send. On a computer? Text it to <a href="tel:+15066071818">506-607-1818</a>.</p>
+          <p>Opens your messages with this written out. Add photos before you send. On a computer? Text it to <b class="num">506-607-1818</b>.</p>
         </div>
       </form>
     </div>
@@ -371,7 +381,6 @@ FORM: Single file, system type set heavy and uppercase for display; green ground
         <li><a href="tel:+15066071818"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1z"/></svg>506-607-1818</a></li>
         <li><a href="https://www.facebook.com/profile.php?id=61595126668325"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Facebook</a></li>
       </ul>
-      <p class="tag">Call or text for a free estimate.</p>
     </div>
     <p class="fine">© 2026 Maple Outdoor Builds</p>
   </div>
@@ -393,6 +402,9 @@ document.querySelectorAll('.row[data-svc]').forEach(function(a){
   a.href=smsHref('Hi '+BIZ+'! I\'d like a free estimate for '+a.dataset.svc+'. The job is in: ');
 });
 
+/* desktops usually can't send texts: the hero button goes to the form, which says so */
+if(matchMedia('(hover:hover) and (pointer:fine)').matches) document.getElementById('heroText').href='#quote';
+
 /* ---------- quote form -> pre-filled text ---------- */
 (function(){
   var form=document.getElementById('quoteForm');
@@ -406,6 +418,8 @@ document.querySelectorAll('.row[data-svc]').forEach(function(a){
     var w=where.value.trim(), d=form.details.value.trim(), n=form.name.value.trim();
     jobF.classList.toggle('invalid',!jobs.length);
     whereF.classList.toggle('invalid',!w);
+    where.setAttribute('aria-invalid',String(!w));
+    jobF.querySelectorAll('input').forEach(function(i){i.setAttribute('aria-invalid',String(!jobs.length));});
     if(!jobs.length){ form.querySelector('input[name=job]').focus(); return; }
     if(!w){ where.focus(); return; }
     var lines=['Hi '+BIZ+'! I\'d like a free estimate.','Job: '+jobs.join(', '),'Where: '+w];
@@ -496,11 +510,10 @@ function paintDeck(ctx,w,h,boardH,seed){
 /* Maple leaf sprites: one per colour, plus a soft shadow. */
 var LEAF_PTS=[[0,-50],[7,-37],[13,-40],[11,-18],[22,-28],[25,-22],[36,-25],[33,-12],[42,-8],[27,2],[30,8],[15,9],[12,15],[16,20],[3,16]];
 var LEAF_COLORS=[ // [base, light, vein]
-  ['#b3261b','#e0502c','#7d140e'],['#c9391f','#ef6a34','#8a1d10'],['#d8572146','#f39a3d','#97350f'],
+  ['#b3261b','#e0502c','#7d140e'],['#c9391f','#ef6a34','#8a1d10'],['#d85721','#f39a3d','#97350f'],
   ['#e07a24','#f6b04a','#a24b10'],['#e6a12f','#f7d35e','#a8690f'],['#d9b23a','#efdc74','#9a7a17'],
   ['#9c2a1d','#c94a2a','#5f140c'],['#a8582a','#d48a45','#6b3010'],['#c4472a','#ea8a3a','#7f2410']
 ];
-LEAF_COLORS[2][0]='#d85721';
 var SPR=96; // sprite px
 function leafPath(ctx,R){
   var j=function(){return R?(R()-0.5)*3:0;};
@@ -558,7 +571,7 @@ addEventListener('pointerdown',function(e){setP(e.clientX,e.clientY);P.lastX=P.x
 addEventListener('touchmove',function(e){var t=e.touches[0]; if(t) setP(t.clientX,t.clientY);},{passive:true});
 function release(e){ if(!e.pointerType||e.pointerType!=='mouse'){P.active=false;} }
 addEventListener('pointerup',release,{passive:true});
-addEventListener('pointercancel',function(){},{passive:true});
+addEventListener('pointercancel',function(){P.active=false;},{passive:true});
 addEventListener('touchend',function(){P.active=false;},{passive:true});
 document.documentElement.addEventListener('mouseleave',function(){P.active=false;});
 
@@ -619,7 +632,7 @@ var HERO={
   densityDesk:1/3600,
   maxLeaves:260,
   phoneMax:90,
-  refill:1.6,       // new leaves per second per 100k px² when below target
+  refill:5,       // new leaves per second per 100k px² when below target
   trickle:0.35,     // leaves per second per 100k px² that fall regardless, so the deck is never still
   fallSpeed:34,     // px/s downward through the air (z)
   wind:14,          // steady drift px/s
@@ -630,7 +643,7 @@ var HERO={
   gravity:420,
   groundFric:3.2, airFric:1.0,
   gustEvery:[4.5,7.5],// seconds between gusts while nobody is touching
-  gustPush:360,     // how hard a gust shoves a leaf
+  gustPush:220,     // how hard a gust shoves a leaf
   gustIdle:9,       // seconds after the last touch before gusts return
   sizePhone:[34,50], sizeDesk:[42,62]
 };
@@ -640,7 +653,7 @@ var heroScene=null;
   var R=rng(20261017);
   var S=new Scene(cv,{seed:1818,boardH:function(){return PHONE_W.matches?44:54;}});
   heroScene=S;
-  var target=0, sizes=HERO.sizePhone, gust=null, nextGust=1.2, lastTouch=-1e9, hint=document.getElementById('hint'), touched=false, acc=0;
+  var target=0, sizes=HERO.sizePhone, gust=null, nextGust=5, lastTouch=-1e9, hint=document.getElementById('hint'), touched=false, acc=0;
   function setup(){
     if(!S.size()) return;
     sizes=PHONE_W.matches?HERO.sizePhone:HERO.sizeDesk;
@@ -668,8 +681,8 @@ var heroScene=null;
     P.lastX=P.x; P.lastY=P.y;
     var rad=HERO.radius*(PHONE_W.matches?1:1.4), rad2=rad*rad;
     // wind gusts play the job until someone takes over
-    if(!gust&&now-lastTouch>HERO.gustIdle*1000){ nextGust-=dt; if(nextGust<=0){
-      var dir=R()<0.5?1:-1; gust={x:dir>0?-160:S.w+160,dir:dir,y:S.h*(0.15+R()*0.7),band:S.h*(0.35+R()*0.3),speed:(S.w+320)/(1.8+R()*0.9),k:0.9+R()*0.4};
+    if(!REDUCED&&!gust&&now-lastTouch>HERO.gustIdle*1000){ nextGust-=dt; if(nextGust<=0){
+      var dir=R()<0.5?1:-1; gust={x:dir>0?-160:S.w+160,dir:dir,y:S.h*(0.15+R()*0.7),band:S.h*(0.10+R()*0.08),speed:(S.w+320)/(1.8+R()*0.9),k:0.9+R()*0.4};
       nextGust=HERO.gustEvery[0]+R()*(HERO.gustEvery[1]-HERO.gustEvery[0]); } }
     if(gust){ gust.x+=gust.dir*gust.speed*dt; if(gust.x<-200||gust.x>S.w+200) gust=null; }
     for(var i=S.leaves.length-1;i>=0;i--){
@@ -709,7 +722,7 @@ var heroScene=null;
       if(L.x<-60||L.x>S.w+60||L.y<-60||L.y>S.h+60) S.leaves.splice(i,1); // swept off the deck
     }
     // the trees never stop: refill slowly
-    var rate=S.leaves.length<target?HERO.refill:(S.leaves.length<target*1.25?HERO.trickle:0);
+    var rate=REDUCED?0:S.leaves.length<target?HERO.refill:(S.leaves.length<target*1.25?HERO.trickle:0);
     acc+=rate*(S.w*S.h/100000)*dt; while(acc>=1){acc-=1; spawnFalling();}
     S.render();
   };
@@ -772,10 +785,11 @@ function frame(t){
   scenes.forEach(function(s){ if(s.visible){any=true; s.step(dt,t);} });
   if(any) requestAnimationFrame(frame); else running=false;
 }
-function kick(){ if(REDUCED||running) return; running=true; last=performance.now(); requestAnimationFrame(frame); }
+function kick(){ if(running) return; running=true; last=performance.now(); requestAnimationFrame(frame); }
 setupAll();
-addEventListener('resize',function(){ setupAll(); });
+var rz; addEventListener('resize',function(){ clearTimeout(rz); rz=setTimeout(setupAll,150); });
 if(!REDUCED) kick();
+if(REDUCED) document.getElementById('deckCanvas').addEventListener('pointerdown',kick,{passive:true});
 })();
 </script>
 </body>
