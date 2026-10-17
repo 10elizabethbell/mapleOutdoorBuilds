@@ -38,6 +38,168 @@
         ],
         "createdAt": "2026-10-17T22:25:44.431Z",
         "reason": "Agent judgment: detector reads only fixed px sizes (15-22px body/labels); hierarchy comes from clamp() display headings at 34-96px"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(255, 247, 234)",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:57.207Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(205, 189, 158)",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:57.278Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(10, 25, 16, 0.35)",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:57.350Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(207, 214, 204)",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:57.424Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(169, 181, 171)",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:57.496Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#fff",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:57.569Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(10,22,15,.55)",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:57.639Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(30,15,5,.9)",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:57.709Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(30,18,8,.5)",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:57.776Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#a6b3a8",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:57.845Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "10.5px",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:57.915Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "20px",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:57.983Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "9.5px",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:58.051Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "16px",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:58.125Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "clamp(26px,7vw,40px)",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:58.196Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "18px",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:58.267Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "12px",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:58.337Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "clamp(56px,4.8vw,76px)",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-17T22:34:58.407Z",
+        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
       }
     ]
   }
