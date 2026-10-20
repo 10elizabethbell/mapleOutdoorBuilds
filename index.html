@@ -1,795 +1,507 @@
 <!doctype html>
-<html lang="en-CA">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Maple Outdoor Builds · Decks & cleanups in Saint John, NB</title>
-<meta name="description" content="Deck repairs, new decks, stairs and railings, property cleanups and junk removal in Saint John, NB and surrounding areas. Small jobs welcome. Call or text 506-607-1818 for a free estimate.">
-<meta name="theme-color" content="#173524">
+<title>Maple Outdoor Builds · Decks, repairs and cleanups · Saint John, NB</title>
+<meta name="description" content="Decks, repairs, railings and property cleanups in Saint John, NB and surrounding areas. Quality work, one project at a time. Call or text 506-607-1818 for a free estimate.">
+<meta name="theme-color" content="#f4f6f2">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Maple Outdoor Builds">
-<meta property="og:description" content="Decks, repairs and property cleanups in Saint John, NB. Quality work, one project at a time. Text 506-607-1818 for a free estimate.">
+<meta property="og:title" content="Maple Outdoor Builds · Decks and yards done right in Saint John">
+<meta property="og:description" content="Quality work, one project at a time. Small jobs welcome. Call or text 506-607-1818 for a free estimate.">
 <meta property="og:url" content="https://10elizabethbell.github.io/mapleOutdoorBuilds/">
 <meta property="og:image" content="https://10elizabethbell.github.io/mapleOutdoorBuilds/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23173524'/%3E%3Cg transform='translate(32 29) scale(.5)' fill='%23f5efe2'%3E%3Cpath d='M0-50L7-37L13-40L11-18L22-28L25-22L36-25L33-12L42-8L27 2L30 8L15 9L12 15L16 20L3 16L3 34L-3 34L-3 16L-16 20L-12 15L-15 9L-30 8L-27 2L-42-8L-33-12L-36-25L-25-22L-22-28L-11-18L-13-40L-7-37Z'/%3E%3C/g%3E%3C/svg%3E">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" as="image" href="img/deck.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
 <style>
-/* ---------- tokens ---------- */
+/* ---------- Tokens ---------- */
 :root{
-  --green-900:#132c1e;
-  --green-800:#173524;
-  --green-700:#20472f;
-  --green-600:#2c5c3e;
-  --cream:#f5efe2;
-  --cream-2:#ebe2cf;
-  --cream-ink:#d9cfb8;
-  --ink:#172a1f;
-  --ink-soft:#43574a;
-  --wood:#b07a45;
-  --maple:#c8442a;        /* hover / focus accent on cream */
-  --maple-bright:#f08a5a; /* focus accent on green */
-  --radius:14px;
+  /* off-white paper, two forest greens from their profile art, one maple-amber accent */
+  --paper:#f4f6f2;       /* page ground */
+  --card:#ffffff;
+  --field:#e5ece5;       /* inputs and chips on the white form card */
+  --ink:#13301f;         /* headings, text on amber */
+  --body:#28382e;        /* running text on light */
+  --soft:#4a5a50;        /* secondary text on light */
+  --navy:#1d4630;        /* forest green: hero overlay, services, close */
+  --deep:#122c1e;        /* how it works, footer (line texture) */
+  --on-dark:#f4f6f1;
+  --on-dark-soft:#c6d5c9;
+  --amber:#f2a93b;       /* maple amber, fills only; text on it is --ink */
+  --amber-2:#f7bd62;
+  --amber-ink:#8a4b00;   /* amber as text on light */
+  --line:rgba(19,48,31,.12);
+  --focus:#1d4630;       /* form hover/focus outline, distinct from the amber fill */
+  --error:#b3261e;
+  --texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);
+  --display:"Cal Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --text:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --r-card:24px;--r-field:10px;--pill:999px;
   --gutter:20px;
-  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;overscroll-behavior-y:none;scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.55 var(--font);-webkit-font-smoothing:antialiased}
-::selection{background:#e9b48f;color:var(--green-900)}
-img{display:block;max-width:100%}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper)}
+::selection{background:var(--amber);color:var(--ink)}
+img,svg{display:block}
 a{color:inherit}
-h1,h2,h3{margin:0;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;line-height:.98;text-wrap:balance}
-h2{font-size:clamp(34px,9vw,58px)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--amber)}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
+h2{font-size:clamp(30px,7.6vw,48px)}
 p{margin:0}
-.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gutter)}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-:focus-visible{outline:3px solid var(--maple);outline-offset:3px}
 
-/* ---------- buttons ---------- */
-.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 24px;border-radius:999px;border:2px solid transparent;font:800 17px/1.2 var(--font);text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s,transform .18s}
+/* ---------- Bands ---------- */
+section{padding:64px 0}
+.on-paper{background:var(--paper)}
+.on-navy{background:var(--navy);color:var(--on-dark-soft)}
+.on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
+.on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
+.accent{color:var(--amber-ink)}
+.on-navy .accent,.on-deep .accent,.hero .accent{color:var(--amber)}
+.head{display:grid;gap:16px;justify-items:start;max-width:640px}
+.lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:38ch}
+.on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
+
+/* Eyebrow: a few key headings only. A label, not a button. */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(19,48,31,.06);padding:9px 14px;border-radius:var(--pill)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--amber)}
+.hero .eyebrow,.on-navy .eyebrow,.on-deep .eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}
 .btn:active{transform:scale(.98)}
 .btn svg{width:20px;height:20px;flex:none}
-.btn-cream{background:var(--cream);color:var(--green-800);border-color:var(--cream)}
-.btn-cream:hover{background:#fff;border-color:#fff}
-.btn-line{background:transparent;color:var(--cream);border-color:rgba(245,239,226,.55)}
-.btn-line:hover{border-color:var(--cream);background:rgba(245,239,226,.08)}
-.btn-green{background:var(--green-800);color:var(--cream);border-color:var(--green-800)}
-.btn-green:hover{background:var(--green-600);border-color:var(--green-600)}
-.on-green :focus-visible{outline-color:var(--maple-bright)}
+.btn-primary{background:var(--amber);color:var(--ink);border-color:var(--amber)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,246,241,.7)}
 
-/* ---------- header ---------- */
-.top{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px var(--gutter) 0;max-width:1180px;margin:0 auto}
-.brand{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:var(--cream)}
-.brand svg{width:40px;height:40px;flex:none}
-.brand b{display:block;font-weight:900;font-size:22px;letter-spacing:.04em;line-height:1}
-.brand small{display:block;font-weight:700;font-size:10.5px;letter-spacing:.22em;line-height:1;margin-top:4px;opacity:.85;white-space:nowrap}
-@media (max-width:374px){.brand{gap:8px}.brand svg{width:34px;height:34px}.brand b{font-size:20px}.brand small{letter-spacing:.12em;font-size:9.5px}.phone{font-size:15px;gap:5px}.top{gap:6px}}
-.phone{display:flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;color:var(--cream);font-weight:800;font-size:16px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
-.phone svg{width:17px;height:17px;flex:none;color:#e9b48f}
-.phone:hover{color:#fff}
-.phone:hover svg{color:var(--maple-bright)}
+/* ---------- Header ---------- */
+.top{background:var(--paper);color:var(--ink);position:sticky;top:0;z-index:20;transition:box-shadow .2s}
+.top.lift{box-shadow:0 6px 20px rgba(18,44,30,.12)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
+.brand{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;line-height:1}
+.brand svg{width:38px;height:38px;flex:none;color:var(--navy)}
+.brand .nm{display:flex;flex-direction:column}
+.brand b{font:400 21px/1 var(--display);letter-spacing:.01em}
+.brand span span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
+.tel svg{width:18px;height:18px;flex:none;color:var(--amber-ink)}
 
-/* ---------- hero ---------- */
-.hero{background:var(--green-800);color:var(--cream);display:flex;flex-direction:column;min-height:100svh}
-.hero-copy{padding:26px var(--gutter) 26px;max-width:1180px;width:100%;margin:0 auto}
-.hero h1{font-size:clamp(44px,13.4vw,92px);line-height:.92;letter-spacing:-.015em}
-.hero h1 span{display:block;color:#e9b48f}
-.hero h1 .l1{color:inherit}
-.promise{margin-top:16px;font-size:clamp(17px,4.4vw,20px);line-height:1.5;max-width:34ch;color:#e4dccb}
-.cta{display:grid;gap:10px;margin-top:22px}
-.deck{position:relative;flex:1;min-height:250px;overflow:hidden;
-  background:#2b1d12 repeating-linear-gradient(180deg,#a8743f 0 43px,#2b1d12 43px 46px)}
-.deck canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;-webkit-user-select:none;user-select:none;cursor:grab}
-.deck canvas:active{cursor:grabbing}
-.deck::before{content:"";position:absolute;inset:0 0 auto;height:18px;z-index:1;pointer-events:none;background:linear-gradient(rgba(10,22,15,.55),rgba(10,22,15,0))}
-.hint{position:absolute;left:0;right:0;bottom:0;z-index:1;pointer-events:none;padding:28px var(--gutter) 14px;font-size:15px;font-weight:700;letter-spacing:.02em;color:#fff7ea;text-shadow:0 1px 3px rgba(30,15,5,.9);background:linear-gradient(rgba(30,18,8,0),rgba(30,18,8,.5));transition:opacity .6s}
-.hint.gone{opacity:0}
+/* ---------- Hero: their finished deck under a forest-green overlay ---------- */
+.hero{padding:0;position:relative;background-color:var(--navy);color:var(--on-dark);overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-1}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:64% 50%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,44,30,.86) 0%,rgba(18,44,30,.74) 55%,rgba(18,44,30,.84) 100%)}
+.hero-copy{position:relative;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:64px}
+.hero h1{color:#fff;font-size:clamp(40px,11.4vw,80px);line-height:1.02;max-width:12ch}
+/* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
+.hero h1 .w{display:inline-block;white-space:nowrap}
+.hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
+@keyframes letter-in{to{opacity:1;transform:none}}
+.hero h1.wait{visibility:hidden}
+.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark);max-width:30ch}
+.actions{display:grid;gap:12px;width:100%;margin-top:4px}
 
-/* ---------- services ---------- */
-.services{padding:64px 0 56px}
-.groups{display:grid;gap:34px;margin-top:30px}
-.group h3{font-size:15px;letter-spacing:.14em;color:var(--ink-soft);font-weight:800;padding-bottom:10px;border-bottom:2px solid var(--ink)}
-.rows{list-style:none;margin:0;padding:0}
-.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:10px 0;border-bottom:1px solid var(--cream-ink);text-decoration:none;font-size:22px;font-weight:750;color:var(--ink)}
+/* ---------- Services: rows on green, only the arrow reacts ---------- */
+.svc-groups{display:grid;gap:36px;margin-top:36px}
+.svc-groups h3{font-size:22px;color:var(--on-dark)}
+.rows{list-style:none;margin:10px 0 0;padding:0}
+.rows li+li{border-top:1px solid rgba(255,255,255,.12)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:10px 0;text-decoration:none;color:var(--on-dark);font:400 clamp(19px,5.2vw,22px)/1.2 var(--display)}
 .row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
-.arrow{display:grid;place-items:center;flex:none;width:40px;height:40px;border-radius:50%;background:var(--cream-2);color:var(--ink);transition:background-color .18s,color .18s}
+.arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:var(--on-dark);transition:background-color .2s,color .2s}
 .arrow svg{width:18px;height:18px}
-.row:hover .arrow,.row:focus-visible .arrow{background:var(--maple);color:#fff}
-.row:focus-visible .arrow{outline:3px solid var(--maple);outline-offset:3px}
-.small-jobs{margin-top:14px;font-size:22px;font-weight:900;text-transform:uppercase;letter-spacing:.01em}
-.small-jobs::after{content:"";display:inline-block;width:.8em;height:.8em;margin-left:.3em;vertical-align:-.06em;background:var(--maple);
-  -webkit-mask:var(--leaf) center/contain no-repeat;mask:var(--leaf) center/contain no-repeat}
-:root{--leaf:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-45 -52 90 90'%3E%3Cpath d='M0-50L7-37L13-40L11-18L22-28L25-22L36-25L33-12L42-8L27 2L30 8L15 9L12 15L16 20L3 16L3 34L-3 34L-3 16L-16 20L-12 15L-15 9L-30 8L-27 2L-42-8L-33-12L-36-25L-25-22L-22-28L-11-18L-13-40L-7-37Z'/%3E%3C/svg%3E")}
+.row:focus-visible .arrow{background:var(--amber);color:var(--ink);outline:3px solid var(--amber);outline-offset:3px}
+.small{margin-top:28px;color:var(--on-dark)}
 
-/* ---------- work ---------- */
-.work{padding:56px 0 64px;background:var(--cream-2)}
-.boards{position:relative;margin-top:28px;border-radius:var(--radius);overflow:hidden;background:#2b1d12 repeating-linear-gradient(180deg,#a8743f 0 37px,#2b1d12 37px 40px);box-shadow:0 18px 40px -18px rgba(40,25,10,.55)}
-.boards canvas{position:absolute;inset:0;width:100%;height:100%}
-.prints{position:relative;display:grid;gap:22px;padding:28px 22px 34px;pointer-events:none}
-.print{margin:0;background:#fbf8f1;padding:9px 9px 0;border-radius:3px;box-shadow:0 2px 3px rgba(30,15,5,.35),0 16px 30px -10px rgba(30,15,5,.6);width:88%}
-.print img{width:100%;height:auto;aspect-ratio:720/660;object-fit:cover;background:#cdbd9e;-webkit-user-drag:none;user-select:none}
-.print figcaption{padding:7px 4px 9px;font-weight:900;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
-.print.p1{transform:rotate(-2.2deg)}
-.print.p2{justify-self:end;transform:rotate(1.8deg)}
-.print.p3{width:94%;justify-self:center;transform:rotate(-.8deg);padding-bottom:9px}
-.print.p3 img{aspect-ratio:720/536}
-.more{margin-top:26px}
-.more .btn{width:100%}
-.more .btn svg{width:22px;height:22px}
+/* ---------- Work ---------- */
+.shots{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:16px}
+.shot{position:relative;border-radius:var(--r-card);overflow:hidden;background:var(--deep);aspect-ratio:12/11}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot::after{content:"";position:absolute;inset:auto 0 0;height:45%;background:linear-gradient(180deg,transparent,rgba(12,30,20,.72))}
+.shot b{position:absolute;left:20px;bottom:16px;z-index:1;font:400 22px/1 var(--display);color:#fff}
+.fb{margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:80px;padding:14px 16px 14px 22px;border-radius:var(--r-card);background:var(--navy);color:var(--on-dark);text-decoration:none;font:400 clamp(19px,5.2vw,22px)/1.2 var(--display)}
+.fb:hover,.fb:focus-visible{outline:none;box-shadow:none}
+.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl svg{width:30px;height:30px;flex:none;color:var(--amber)}
+.fb:focus-visible .arrow{background:var(--amber);color:var(--ink);outline:3px solid var(--amber);outline-offset:3px}
 
-/* ---------- steps ---------- */
-.how{padding:64px 0 24px}
-.steps{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:26px;counter-reset:s}
-.steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 16px;align-items:start;align-content:start}
-.steps li::before{counter-increment:s;content:counter(s);grid-row:span 2;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--green-800);color:var(--cream);font-weight:900;font-size:22px}
-.steps h3{font-size:22px;padding-top:4px}
-.steps p{color:var(--ink-soft);max-width:44ch}
+/* ---------- How it works ---------- */
+.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);font:400 20px/1 var(--display)}
+.steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}
+.steps span{display:block;margin-top:4px}
 
-/* ---------- area ---------- */
-.area{padding:48px 0 70px}
-.area .big{margin-top:18px;font-size:clamp(26px,7vw,40px);font-weight:850;line-height:1.12;letter-spacing:-.01em;max-width:18ch}
-.area .also{margin-top:12px;font-size:17px;color:var(--ink-soft)}
-
-/* ---------- close + form ---------- */
-.edge{position:relative;height:38px;background:#2b1d12 repeating-linear-gradient(180deg,#a8743f 0 35px,#2b1d12 35px 38px)}
-.edge canvas{position:absolute;inset:0;width:100%;height:100%}
-.close{background:var(--green-800);color:var(--cream);padding:58px 0 66px}
-.close h2 span{color:#e9b48f}
-.close .lead{margin-top:14px;color:#e4dccb;font-size:17px;max-width:36ch}
-form{margin-top:30px;display:grid;gap:22px;max-width:620px}
+/* ---------- Form ---------- */
+.ask .wrap{display:grid;gap:28px}
+form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
-legend,label.lbl{display:block;font-weight:800;font-size:17px;margin-bottom:10px;padding:0}
-.opt{font-weight:500;color:#bfc9bd}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s}
+textarea{min-height:120px;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--soft)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
-.chip{position:relative}
-.chip input{position:absolute;opacity:0;width:1px;height:1px}
-.chip span{display:flex;align-items:center;min-height:46px;padding:10px 16px;border-radius:999px;border:2px solid rgba(245,239,226,.35);font-weight:700;font-size:17px;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}
-.chip:hover span,.chip input:focus-visible+span{border-color:var(--maple-bright);outline:none}
-.chip input:focus-visible+span{box-shadow:0 0 0 3px rgba(240,138,90,.35)}
-.chip input:checked+span{background:var(--cream);color:var(--green-800);border-color:var(--cream)}
-.chip input:checked+span::before{content:"";width:16px;height:16px;margin-right:8px;background:var(--maple);-webkit-mask:var(--leaf) center/contain no-repeat;mask:var(--leaf) center/contain no-repeat}
-.chip:hover input:checked+span{border-color:var(--maple-bright)}
-input[type=text],textarea{width:100%;min-height:54px;padding:14px 16px;border-radius:12px;border:2px solid rgba(245,239,226,.35);background:rgba(10,25,16,.35);color:var(--cream);font:500 17px/1.4 var(--font);caret-color:var(--maple-bright);transition:border-color .15s}
-textarea{min-height:110px;resize:vertical}
-input[type=text]::placeholder,textarea::placeholder{color:#a6b3a8}
-input[type=text]:hover,textarea:hover,input[type=text]:focus,textarea:focus{border-color:var(--maple-bright);outline:none}
-input[type=text]:focus,textarea:focus{box-shadow:0 0 0 3px rgba(240,138,90,.3)}
-.err{display:none;margin-top:8px;color:#ffb894;font-weight:700;font-size:15px}
-.invalid .err{display:block}
-.invalid input[type=text]{border-color:#ffb894}
-.send .btn{width:100%;border-color:var(--cream)}
-.send .btn:hover,.send .btn:focus-visible{border-color:var(--maple-bright)}
-.send p{margin-top:12px;font-size:15px;color:#bfc9bd}
-.send .num{color:var(--cream);font-weight:700;user-select:all;-webkit-user-select:all;white-space:nowrap}
+.chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:3px}
+.chips input:checked+label{background:var(--ink);color:#fff}
+.err{display:none;font-size:15px;color:var(--error)}
+.field.bad .err{display:block}
+.field.bad input[type=text],.field.bad textarea,.field.bad input[type=text]:focus,.field.bad textarea:focus{border-color:var(--error)}
+form .btn-primary{width:100%}
+form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.after{font-size:15px;color:var(--soft)}
+.sent{color:var(--ink);font-weight:600}
+.sent a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
+@media (max-width:380px){.chips label{padding:0 14px}}
 
-/* ---------- footer ---------- */
-footer{background:var(--green-900);color:#cfd6cc;padding:44px 0 calc(44px + env(safe-area-inset-bottom))}
-footer .brand{color:var(--cream)}
-.foot{display:grid;gap:22px}
-.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
-.foot a{display:inline-flex;align-items:center;gap:10px;min-height:44px;color:var(--cream);font-weight:700;text-decoration:none}
-.foot a:hover{color:#e9b48f}
-.foot a svg{width:18px;height:18px;color:#e9b48f}
-.tag{font-size:15px}
-.fine{margin-top:26px;padding-top:18px;border-top:1px solid rgba(245,239,226,.14);font-size:15px;color:#a9b5ab}
+/* ---------- Close ---------- */
+.close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark)}
+.bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px;white-space:nowrap}
+.bigtel svg{width:.8em;height:.8em;flex:none;color:var(--amber)}
+.area{margin-top:22px;max-width:40ch}
 
-/* ---------- wider ---------- */
-@media (max-width:1023px){
-  .hero{min-height:0}
-  .deck{flex:none;height:clamp(240px,40svh,340px)}
-}
-@media (min-width:640px){
-  :root{--gutter:32px}
-  .cta{display:flex;flex-wrap:wrap;justify-content:flex-start}
-  .cta .btn{white-space:nowrap}
-  .prints{grid-template-columns:1fr 1fr;padding:34px 30px 40px;gap:26px}
-  .print{width:100%}
-  .print.p3{grid-column:1/-1;width:70%}
-  .more .btn{width:auto;display:inline-flex}
-  .send .btn{width:auto;display:inline-flex}
+/* ---------- Footer ---------- */
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:14px}
+.nw{white-space:nowrap}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
+
+/* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
+.float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);box-shadow:0 10px 28px rgba(10,30,18,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.float.on{transform:none}
+.float svg{width:26px;height:26px}
+.float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
+
+/* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+.js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
+.js .rise.below{opacity:0;transform:translateY(12px)}
+
+/* ---------- Desktop ---------- */
+@media (min-width:760px){
+  :root{--gutter:40px}
+  .top .wrap{min-height:76px}
+  .brand b{font-size:24px}
+  .tel{font-size:20px}
+  section{padding:96px 0}
+  .hero-copy{padding-top:112px;padding-bottom:120px}
+  .hero-bg img{object-position:50% 50%}
+  .promise{max-width:none}
+  .actions{grid-auto-flow:column;justify-content:start;width:auto}
+  .actions .btn{min-width:240px}
+  .shots{grid-template-columns:repeat(3,1fr)}
+  .fb{max-width:520px}
 }
 @media (min-width:1024px){
-  body{font-size:18px}
-  .top{padding-top:22px}
-  .brand svg{width:48px;height:48px}
-  .brand b{font-size:26px}
-  .brand small{font-size:12px}
-  .phone{font-size:18px}
-  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto 1fr;min-height:min(100svh,880px)}
-  .hero .top{grid-column:1/-1;max-width:none;width:100%;margin:0;padding-left:max(var(--gutter),calc((100vw - 1180px)/2 + var(--gutter)));padding-right:max(var(--gutter),calc((100vw - 1180px)/2 + var(--gutter)))}
-  .hero-copy{align-self:center;padding:40px 40px 80px max(var(--gutter),calc((100vw - 1180px)/2 + var(--gutter)));margin:0}
-  .hero h1{font-size:clamp(56px,4.8vw,76px)}
-  .hero h1 span{white-space:nowrap}
-  .deck{margin:22px 0 0;border-top-left-radius:28px;min-height:560px}
-  .deck::before{display:none}
-  .hint{padding-left:32px}
-  .services{padding:100px 0 90px}
-  .services .wrap{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:60px}
-  .groups{grid-template-columns:1fr 1fr;gap:44px;margin-top:6px}
-  .work{padding:96px 0 100px}
-  .prints{grid-template-columns:1.05fr 1fr 1.25fr;align-items:center;padding:52px 46px 56px;gap:34px}
-  .print.p3{grid-column:auto;width:100%}
-  .how{padding:100px 0 30px}
-  .steps{grid-template-columns:repeat(3,1fr);gap:40px}
-  .area{padding:70px 0 100px}
-  .area .wrap{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:60px;align-items:start}
-  .area .big{margin-top:4px}
-  .close{padding:90px 0 100px}
-  .close .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:60px;align-items:start}
-  form{margin-top:0}
-  .foot{grid-template-columns:2fr 1fr;align-items:start}
+  .svc-groups{grid-template-columns:1fr 1fr;column-gap:64px}
+  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .ask .head{position:sticky;top:116px}
+  .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+  .bigtel{margin-top:0}
+  .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .steps b{font-size:22px}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.chip span,.arrow{transition:none}}
+/* hover styles only where there is a real pointer, so taps don't leave them stuck on */
+@media (hover:hover){
+.tel:hover{color:var(--amber-ink)}
+.btn-primary:hover{background:var(--amber-2);border-color:var(--amber-2)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.row:hover .arrow,.fb:hover .arrow{background:var(--amber);color:var(--ink)}
+input[type=text]:hover,textarea:hover{border-color:var(--focus)}
+.chips label:hover{border-color:var(--focus)}
+form .btn-primary:hover{outline:2px solid var(--focus);outline-offset:2px}
+.sent a:hover{color:var(--navy)}
+.bigtel:hover{color:var(--amber)}
+footer a:hover{color:var(--amber)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rise,.float,.btn,.top{transition:none}
+  .js .rise.below{opacity:1;transform:none}
+  .hero h1 .c{animation:none;opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 <!--
-DIRECTION CONTRACT
-THESIS: An October deck in Saint John: maple leaves keep falling on fresh boards, and you sweep them off. Building and cleaning up, in one gesture.
-OWN-WORLD: Their own material: pressure-treated deck boards with grain, knots and screw lines; maple leaves in real autumn colours; the forest green and cream of their Facebook profile art (leaf over roofline).
-STORY: Hero (sweep the deck) -> What we do (decks / yards, each row texts a quote) -> Before & after, laid on the boards like prints, then the Facebook link -> How it works (photo, free estimate, the work) -> Where we work -> Let's build something great (quote form that opens a text) -> footer.
-FIRST VIEWPORT (phone): leaf-roof mark + name left, 506-607-1818 top right; "Built right. Left clean."; their promise; Text for a free estimate + See our work; the living deck below filling the rest of the screen.
-FORM: Single file, system type set heavy and uppercase for display; green ground for hero, close and footer, cream for the content; maple red only as the hover/focus accent.
+THESIS: A Saint John deck-and-yard crew's site that earns trust through calm order (after lpmr.co.uk): their own finished deck behind one claim (decks and yards done right in Saint John), their own words (quality work, one project at a time; small jobs welcome), and an easy way to text for a free estimate.
+OWN-WORLD: Off-white paper, forest green (#1d4630) and deep forest (#122c1e, faint diagonal lines) bands taken from their green-and-cream profile art, maple amber (#f2a93b) as the one warm accent (fills only; #8a4b00 when it has to be text on light). Cal Sans display, system body at 16/1.7. Their leaf-over-roofline mark, redrawn.
+STORY: The visitor sees a real deck they built, believes this crew does careful work near them (their photos, then Facebook for more), picks the job, and texts it for a free estimate.
+FIRST VIEWPORT: Paper header with the leaf mark and name left, tap-to-call number top right. Hero on their deck photo under a forest-green overlay: eyebrow, "Decks and yards, done right in Saint John.", their tagline, two pill buttons (Get a free estimate, Text us).
+FORM: calm-photo band system; the earlier October-deck leaf-sweeping world is in git history (dd3b6b5) and offered as opt-in motion in HANDOFF.md.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, DESIGN.md, and the finishing-rules checklist.
 -->
-<header class="hero on-green">
-  <div class="top">
-    <a class="brand" href="#top" id="top" aria-label="Maple Outdoor Builds, home">
-      <svg viewBox="-50 -56 100 100" aria-hidden="true"><path fill="currentColor" d="M0-50L7-37L13-40L11-18L22-28L25-22L36-25L33-12L42-8L27 2L30 8L15 9L12 15L16 20L3 16L3 34L-3 34L-3 16L-16 20L-12 15L-15 9L-30 8L-27 2L-42-8L-33-12L-36-25L-25-22L-22-28L-11-18L-13-40L-7-37Z" transform="translate(0 -6) scale(.78)"/><path d="M-46 36L0 4L46 36" fill="none" stroke="var(--green-800)" stroke-width="11" stroke-linejoin="miter"/><path d="M-44 38L0 8L44 38" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="miter"/></svg>
-      <span><b>MAPLE</b><small>OUTDOOR BUILDS</small></span>
-    </a>
-    <a class="phone" href="tel:+15066071818"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1z"/></svg>506-607-1818</a>
-  </div>
-  <div class="hero-copy">
-    <h1><span class="l1">Built right.</span> <span>Left clean.</span></h1>
-    <p class="promise">Quality work, one project at a time. We look after your deck and yard like they're our own, and small jobs are always welcome.</p>
-    <div class="cta">
-      <a class="btn btn-cream" id="heroText" href="sms:+15066071818?&body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate."><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Text for a free estimate</a>
-      <a class="btn btn-line" href="#work">See our work</a>
-    </div>
-  </div>
-  <div class="deck" id="deck">
-    <canvas id="deckCanvas" aria-label="A deck covered in fallen maple leaves. Drag across it to sweep them off." role="img"></canvas>
-    <p class="hint" id="hint">Drag to sweep the leaves</p>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mark" viewBox="-50 -56 100 100"><path fill="currentColor" d="M0-50L7-37L13-40L11-18L22-28L25-22L36-25L33-12L42-8L27 2L30 8L15 9L12 15L16 20L3 16L3 34L-3 34L-3 16L-16 20L-12 15L-15 9L-30 8L-27 2L-42-8L-33-12L-36-25L-25-22L-22-28L-11-18L-13-40L-7-37Z" transform="translate(0 -6) scale(.78)"/><path d="M-46 36L0 4L46 36" fill="none" stroke="var(--paper)" stroke-width="11"/><path d="M-44 38L0 8L44 38" fill="none" stroke="currentColor" stroke-width="6"/></symbol>
+</svg>
+<header class="top" id="topbar">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Maple Outdoor Builds, back to top"><svg aria-hidden="true"><use href="#i-mark"/></svg><span class="nm"><b>Maple</b><span>Outdoor Builds</span></span></a>
+    <a class="tel" href="tel:+15066071818"><svg aria-hidden="true"><use href="#i-phone"/></svg>506-607-1818</a>
   </div>
 </header>
 
-<main>
-  <section class="services" id="services">
-    <div class="wrap">
-      <div>
-        <h2>What we do</h2>
-        <p class="small-jobs">Small jobs welcome</p>
-      </div>
-      <div>
-        <div class="groups">
-          <div class="group">
-            <h3>Decks</h3>
-            <ul class="rows" data-group="decks">
-              <li><a class="row" data-svc="deck repairs" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20deck%20repairs.%20The%20job%20is%20in%3A%20">Deck repairs<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-              <li><a class="row" data-svc="a new deck" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20a%20new%20deck.%20The%20job%20is%20in%3A%20">New decks<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-              <li><a class="row" data-svc="stairs and railings" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20stairs%20and%20railings.%20The%20job%20is%20in%3A%20">Stairs &amp; railings<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-              <li><a class="row" data-svc="a deck extension" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20a%20deck%20extension.%20The%20job%20is%20in%3A%20">Extensions<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-              <li><a class="row" data-svc="deck resurfacing" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20deck%20resurfacing.%20The%20job%20is%20in%3A%20">Resurfacing<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            </ul>
-          </div>
-          <div class="group">
-            <h3>Yards &amp; cleanups</h3>
-            <ul class="rows">
-              <li><a class="row" data-svc="a property cleanup" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20a%20property%20cleanup.%20The%20job%20is%20in%3A%20">Property cleanups<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-              <li><a class="row" data-svc="yard cleanup and removal" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20yard%20cleanup%20and%20removal.%20The%20job%20is%20in%3A%20">Yard cleanup &amp; removal<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-              <li><a class="row" data-svc="junk removal and hauling" href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I'd%20like%20a%20free%20estimate%20for%20junk%20removal%20and%20hauling.%20The%20job%20is%20in%3A%20">Junk removal &amp; hauling<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="h1">
+  <div class="hero-bg"><img src="img/deck.webp" alt="" width="720" height="536" fetchpriority="high" decoding="async"></div>
+  <div class="wrap hero-copy">
+    <p class="eyebrow">Free estimates</p>
+    <h1 id="h1">Decks and yards, done right <span class="accent">in Saint John.</span></h1>
+    <p class="promise">Quality work, one project at a time. Small jobs welcome.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#ask">Get a free estimate</a>
+      <a class="btn btn-ghost" data-sms href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I%20found%20your%20website.%20I'd%20like%20a%20free%20estimate%20for%3A%20"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text us</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="work" id="work">
-    <div class="wrap">
-      <h2>Before &amp; after</h2>
-      <div class="boards" id="boards">
-        <canvas id="boardsCanvas" aria-hidden="true"></canvas>
-        <div class="prints">
-          <figure class="print p1"><img src="img/before.webp" loading="lazy" decoding="async" alt="An old deck with grey, split boards and one board rotted through" width="720" height="660" draggable="false"><figcaption>Before</figcaption></figure>
-          <figure class="print p2"><img src="img/after.webp" loading="lazy" decoding="async" alt="The same deck with new, smooth brown boards screwed down in straight rows" width="720" height="660" draggable="false"><figcaption>After</figcaption></figure>
-          <figure class="print p3"><img src="img/deck.webp" loading="lazy" decoding="async" alt="A finished wooden deck with railings and stairs down to the lawn behind a house" width="720" height="536" draggable="false"></figure>
-        </div>
+<section class="on-navy" id="services" aria-labelledby="h-svc">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Small jobs welcome</p>
+      <h2 id="h-svc">What we <span class="accent">do.</span></h2>
+    </div>
+    <div class="svc-groups">
+      <div class="rise">
+        <h3>Decks</h3>
+        <ul class="rows">
+          <li><a class="row" data-job="New deck" href="#ask">New decks<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-job="Deck repair" href="#ask">Repairs &amp; rebuilds<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-job="Stairs or railings" href="#ask">Stairs &amp; railings<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-job="Deck extension" href="#ask">Extensions<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-job="Resurfacing" href="#ask">Resurfacing<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+        </ul>
       </div>
-      <div class="more">
-        <a class="btn btn-green" href="https://www.facebook.com/profile.php?id=61595126668325"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Click to see more of our work</a>
+      <div class="rise">
+        <h3>Yards &amp; cleanups</h3>
+        <ul class="rows">
+          <li><a class="row" data-job="Property cleanup" href="#ask">Property cleanups<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-job="Yard cleanup" href="#ask">Yard cleanup &amp; removal<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-job="Junk removal" href="#ask">Junk removal &amp; hauling<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="how" id="how">
-    <div class="wrap">
-      <h2>How it works</h2>
-      <ol class="steps">
-        <li><h3>Text us a photo</h3><p>A picture of the job, and rough measurements if it's a deck.</p></li>
-        <li><h3>Get a free estimate</h3><p>We tell you what it needs and what it costs before anything starts.</p></li>
-        <li><h3>We do the work</h3><p>Done properly, start to finish, and the yard left clean.</p></li>
-      </ol>
-    </div>
-  </section>
+<section class="on-paper" id="work" aria-labelledby="h-work">
+  <div class="wrap">
+    <h2 id="h-work" class="rise">Our work</h2>
+    <ul class="shots">
+      <li class="shot rise"><img src="img/before.webp" alt="Rotted, split grey deck boards with screws showing" width="720" height="660" loading="lazy" decoding="async"><b>Before</b></li>
+      <li class="shot rise"><img src="img/after.webp" alt="New brown deck boards, evenly screwed down" width="720" height="660" loading="lazy" decoding="async"><b>After</b></li>
+      <li class="shot rise"><img src="img/deck.webp" alt="A new wooden deck with railings and stairs down to the lawn" width="720" height="536" loading="lazy" decoding="async"><b>Finished deck</b></li>
+    </ul>
+    <a class="fb rise" href="https://www.facebook.com/profile.php?id=61595126668325" rel="noopener">
+      <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Click to see more of our work.</span>
+      <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+    </a>
+  </div>
+</section>
 
-  <section class="area" id="area">
-    <div class="wrap">
-      <h2>Where we work</h2>
-      <div>
-        <p class="big">Saint John, NB and surrounding areas</p>
-        <p class="also">Also Moncton, Dieppe and Riverview.</p>
-      </div>
-    </div>
-  </section>
+<section class="on-deep how" aria-labelledby="h-how">
+  <div class="wrap">
+    <h2 id="h-how" class="rise">How it <span class="accent">works.</span></h2>
+    <ol class="steps">
+      <li class="rise"><div><b>Send us a photo.</b><span>Photos and rough sizes are enough for a quote.</span></div></li>
+      <li class="rise"><div><b>Get a free estimate.</b><span>You know what it needs and what it costs before we start.</span></div></li>
+      <li class="rise"><div><b>We do the job.</b><span>Properly, start to finish, and we leave your yard clean.</span></div></li>
+    </ol>
+  </div>
+</section>
 
-  <div class="edge" id="edge"><canvas id="edgeCanvas" aria-hidden="true"></canvas></div>
-  <section class="close on-green" id="quote">
-    <div class="wrap">
-      <div>
-        <h2>Send us <span>a photo.</span></h2>
-        <p class="lead">Pick what you need, add a photo in the text, and we'll get back to you with a free estimate.</p>
-      </div>
-      <form id="quoteForm" novalidate>
-        <fieldset id="jobField">
-          <legend>What do you need?</legend>
-          <div class="chips">
-            <label class="chip"><input type="checkbox" name="job" value="Deck repair"><span>Deck repair</span></label>
-            <label class="chip"><input type="checkbox" name="job" value="New deck"><span>New deck</span></label>
-            <label class="chip"><input type="checkbox" name="job" value="Stairs or railings"><span>Stairs or railings</span></label>
-            <label class="chip"><input type="checkbox" name="job" value="Property or yard cleanup"><span>Cleanup</span></label>
-            <label class="chip"><input type="checkbox" name="job" value="Junk removal"><span>Junk removal</span></label>
-            <label class="chip"><input type="checkbox" name="job" value="Something else"><span>Something else</span></label>
-          </div>
-          <p class="err" id="jobErr" aria-live="polite">Pick at least one, or choose "Something else".</p>
-        </fieldset>
-        <div id="whereField">
-          <label class="lbl" for="where">Where is the job?</label>
-          <input type="text" id="where" name="where" aria-describedby="whereErr" autocomplete="address-level2" placeholder="Town or street, e.g. Rothesay">
-          <p class="err" id="whereErr" aria-live="polite">Add the town so we know where to come.</p>
-        </div>
-        <div>
-          <label class="lbl" for="details">Anything else? <span class="opt">(optional)</span></label>
-          <textarea id="details" name="details" placeholder="Rough size, what's broken, when you'd like it done"></textarea>
-        </div>
-        <div>
-          <label class="lbl" for="name">Your name <span class="opt">(optional)</span></label>
-          <input type="text" id="name" name="name" autocomplete="given-name">
-        </div>
-        <div class="send">
-          <button class="btn btn-cream" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Text this to us</button>
-          <p>Opens your messages with this written out. Add photos before you send. On a computer? Text it to <b class="num">506-607-1818</b>.</p>
-        </div>
-      </form>
+<section class="on-paper ask" id="ask" aria-labelledby="h-ask">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Free estimate</p>
+      <h2 id="h-ask">Tell us about the job</h2>
+      <p class="lede">Add a few photos to the text before you send it.</p>
     </div>
-  </section>
+    <form id="quoteForm" class="rise" novalidate>
+      <fieldset class="field" id="f-job">
+        <legend>What do you need?</legend>
+        <div class="chips">
+          <input type="checkbox" name="job" id="j1" value="New deck"><label for="j1">New deck</label>
+          <input type="checkbox" name="job" id="j2" value="Deck repair"><label for="j2">Deck repair</label>
+          <input type="checkbox" name="job" id="j3" value="Stairs or railings"><label for="j3">Stairs or railings</label>
+          <input type="checkbox" name="job" id="j4" value="Deck extension"><label for="j4">Extension</label>
+          <input type="checkbox" name="job" id="j5" value="Resurfacing"><label for="j5">Resurfacing</label>
+          <input type="checkbox" name="job" id="j6" value="Property cleanup"><label for="j6">Property cleanup</label>
+          <input type="checkbox" name="job" id="j7" value="Yard cleanup"><label for="j7">Yard cleanup</label>
+          <input type="checkbox" name="job" id="j8" value="Junk removal"><label for="j8">Junk removal</label>
+          <input type="checkbox" name="job" id="j9" value="Something else"><label for="j9">Something else</label>
+        </div>
+        <p class="err" id="e-job" aria-live="polite">Pick at least one, or choose "Something else".</p>
+      </fieldset>
+      <div class="field" id="f-where">
+        <label for="where">Where is the job?</label>
+        <input type="text" id="where" name="where" autocomplete="address-level2" maxlength="60" placeholder="Town or street, e.g. Rothesay" aria-describedby="e-where">
+        <p class="err" id="e-where" aria-live="polite">Add the town so we know where to come.</p>
+      </div>
+      <div class="field">
+        <label for="details">Anything else? <small>(optional)</small></label>
+        <textarea id="details" name="details" maxlength="600" placeholder="Rough size, what's broken, when you'd like it done"></textarea>
+      </div>
+      <div class="field">
+        <label for="name">Your name <small>(optional)</small></label>
+        <input type="text" id="name" name="name" autocomplete="given-name" maxlength="60">
+      </div>
+      <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to us</button>
+      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Text or call us at <a href="tel:+15066071818">506-607-1818</a>.</p>
+      <p class="after">Opens your messages with this written out.</p>
+    </form>
+  </div>
+</section>
+
+<section class="on-navy close" id="close" aria-labelledby="h-close">
+  <div class="wrap">
+    <div class="rise">
+      <h2 id="h-close">Maple Outdoor Builds</h2>
+      <p class="who">Quality work, one project at a time.</p>
+      <p class="area">Saint John, NB and surrounding areas. Also Moncton, Dieppe and Riverview.</p>
+    </div>
+    <a class="bigtel rise" href="tel:+15066071818"><svg aria-hidden="true"><use href="#i-phone"/></svg>506-607-1818</a>
+  </div>
+</section>
 </main>
 
-<footer class="on-green">
+<footer>
   <div class="wrap">
-    <div class="foot">
-      <div>
-        <a class="brand" href="#top" aria-label="Maple Outdoor Builds, back to top">
-          <svg viewBox="-50 -56 100 100" aria-hidden="true"><path fill="currentColor" d="M0-50L7-37L13-40L11-18L22-28L25-22L36-25L33-12L42-8L27 2L30 8L15 9L12 15L16 20L3 16L3 34L-3 34L-3 16L-16 20L-12 15L-15 9L-30 8L-27 2L-42-8L-33-12L-36-25L-25-22L-22-28L-11-18L-13-40L-7-37Z" transform="translate(0 -6) scale(.78)"/><path d="M-46 36L0 4L46 36" fill="none" stroke="var(--green-900)" stroke-width="11"/><path d="M-44 38L0 8L44 38" fill="none" stroke="currentColor" stroke-width="6"/></svg>
-          <span><b>MAPLE</b><small>OUTDOOR BUILDS</small></span>
-        </a>
-        <p class="tag" style="margin-top:14px">Quality work, one project at a time.<br>Saint John, NB and surrounding areas.</p>
-      </div>
-      <ul>
-        <li><a href="tel:+15066071818"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1z"/></svg>506-607-1818</a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=61595126668325"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Facebook</a></li>
-      </ul>
-    </div>
-    <p class="fine">© 2026 Maple Outdoor Builds</p>
+    <span>Maple Outdoor Builds · Saint John, NB · <span class="nw">506-607-1818</span></span>
+    <nav aria-label="Contact">
+      <a href="https://www.facebook.com/profile.php?id=61595126668325" rel="noopener">Facebook</a>
+    </nav>
   </div>
 </footer>
 
+<a class="float" id="float" data-sms href="sms:+15066071818?&amp;body=Hi%20Maple%20Outdoor%20Builds!%20I%20found%20your%20website.%20I'd%20like%20a%20free%20estimate%20for%3A%20" aria-label="Text Maple Outdoor Builds"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+
 <script>
-/* =========================================================
-   Maple Outdoor Builds: deck + leaves
-   Tunables are at the top of each block.
-   ========================================================= */
+/* ===== Config ===== */
+var CONFIG = {
+  PHONE: '+15066071818',
+  FLOAT: true,     // the floating text circle; false removes it
+  FONT_WAIT: 900   // ms to wait for Cal Sans before skipping the H1 bounce-in
+};
+document.documentElement.classList.add('js');
+
+/* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
 (function(){
-'use strict';
-var PHONE='+15066071818';
-var BIZ='Maple Outdoor Builds';
-function smsHref(body){return 'sms:'+PHONE+'?&body='+encodeURIComponent(body);}
+  var h=document.getElementById('h1');
+  if(!h||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  // wait for Cal Sans so the line breaks we keep are the real ones; if it takes too long, show the plain heading instead
+  var done=false;h.classList.add('wait');
+  function give(){if(!done){done=true;h.classList.remove('wait')}}
+  setTimeout(give,CONFIG.FONT_WAIT);
+  if(document.fonts&&document.fonts.load)document.fonts.load('400 40px "Cal Sans"').then(function(){if(!done){done=true;go()}},give);else give();
+  function go(){
+  var plain=h.innerHTML,i=0,last=null,tops=[],wi=0;
+  h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());
+  // letter spans lose kerning and run wider, so note where the plain heading breaks its lines and keep those breaks
+  (function measure(node){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===1)return measure(n);
+      if(n.nodeType!==3)return;
+      var re=/\S+/g,m,r=document.createRange();
+      while((m=re.exec(n.textContent))){r.setStart(n,m.index);r.setEnd(n,m.index+m[0].length);tops.push(r.getClientRects()[0].top)}
+    });
+  })(h);
+  function split(node,into){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        n.textContent.split(/(\s+)/).forEach(function(part){
+          if(!part)return;
+          if(/^\s+$/.test(part)){into.appendChild(document.createTextNode(' '));return}
+          if(wi>0&&tops[wi]>tops[wi-1]+2)into.appendChild(document.createElement('br'));
+          wi++;
+          var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
+          for(var k=0;k<part.length;k++){var c=document.createElement('span');c.className='c';c.style.setProperty('--i',i++);c.textContent=part[k];w.appendChild(c);last=c}
+          into.appendChild(w);
+        });
+      }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
+    });
+  }
+  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);h.style.whiteSpace='nowrap';
+  // once the last letter lands, put the plain heading back so kerning and text selection return
+  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.style.whiteSpace='';h.removeAttribute('aria-label')});
+  h.classList.remove('wait');
+  }
+})();
 
-/* ---------- service rows: each opens a text naming the service ---------- */
-document.querySelectorAll('.row[data-svc]').forEach(function(a){
-  a.href=smsHref('Hi '+BIZ+'! I\'d like a free estimate for '+a.dataset.svc+'. The job is in: ');
-});
-
-/* desktops usually can't send texts: the hero button goes to the form, which says so */
-if(matchMedia('(hover:hover) and (pointer:fine)').matches) document.getElementById('heroText').href='#quote';
-
-/* ---------- quote form -> pre-filled text ---------- */
+/* ===== Header shadow once the hero is scrolled past ===== */
 (function(){
-  var form=document.getElementById('quoteForm');
-  var jobF=document.getElementById('jobField'), whereF=document.getElementById('whereField');
-  var where=document.getElementById('where');
-  form.addEventListener('change',function(){ if(form.querySelector('input[name=job]:checked')) jobF.classList.remove('invalid'); });
-  where.addEventListener('input',function(){ if(where.value.trim()) whereF.classList.remove('invalid'); });
+  var bar=document.getElementById('topbar');
+  function sync(){bar.classList.toggle('lift',scrollY>8)}
+  addEventListener('scroll',sync,{passive:true});sync();
+})();
+
+/* ===== Service rows pre-select the matching chip in the form ===== */
+(function(){
+  [].forEach.call(document.querySelectorAll('.row[data-job]'),function(row){
+    row.addEventListener('click',function(){
+      var box=document.querySelector('#quoteForm input[name=job][value="'+row.getAttribute('data-job')+'"]');
+      if(box){box.checked=true;document.getElementById('f-job').classList.remove('bad')}
+    });
+  });
+})();
+
+/* ===== Quote form: composes a text to the business ===== */
+(function(){
+  var form=document.getElementById('quoteForm');if(!form)return;
+  function val(id){return document.getElementById(id).value.trim()}
+  form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&(e.target.type==='checkbox'?e.target.checked:e.target.value.trim()))f.classList.remove('bad')});
+  form.addEventListener('change',function(e){if(e.target.name==='job'&&e.target.checked)document.getElementById('f-job').classList.remove('bad')});
   form.addEventListener('submit',function(e){
     e.preventDefault();
-    var jobs=[].map.call(form.querySelectorAll('input[name=job]:checked'),function(i){return i.value;});
-    var w=where.value.trim(), d=form.details.value.trim(), n=form.name.value.trim();
-    jobF.classList.toggle('invalid',!jobs.length);
-    whereF.classList.toggle('invalid',!w);
-    where.setAttribute('aria-invalid',String(!w));
-    jobF.querySelectorAll('input').forEach(function(i){i.setAttribute('aria-invalid',String(!jobs.length));});
-    if(!jobs.length){ form.querySelector('input[name=job]').focus(); return; }
-    if(!w){ where.focus(); return; }
-    var lines=['Hi '+BIZ+'! I\'d like a free estimate.','Job: '+jobs.join(', '),'Where: '+w];
-    if(d) lines.push('Details: '+d);
-    if(n) lines.push('Name: '+n);
-    location.href=smsHref(lines.join('\n'));
+    var jobs=[].map.call(form.querySelectorAll('input[name=job]:checked'),function(b){return b.value});
+    var where=val('where'),details=val('details'),name=val('name');
+    var whereEl=document.getElementById('where');
+    document.getElementById('f-job').classList.toggle('bad',!jobs.length);
+    document.getElementById('f-where').classList.toggle('bad',!where);
+    whereEl.setAttribute('aria-invalid',where?'false':'true');
+    if(!jobs.length){document.getElementById('j1').focus();return}
+    if(!where){whereEl.focus();return}
+    var msg='Hi Maple Outdoor Builds!'+(name?' This is '+name+'.':'')+' I\'d like a free estimate for: '+jobs.join(', ')+'. The job is in '+where+'.';
+    if(details)msg+=' '+details;
+    location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    // if no messages app opened (desktop, some in-app browsers), say what to do instead
+    setTimeout(function(){document.getElementById('sent').hidden=false},900);
   });
 })();
 
-/* =========================================================
-   Shared: random, deck painter, leaf sprites, pointer
-   ========================================================= */
-var REDUCED=matchMedia('(prefers-reduced-motion: reduce)').matches;
-var PHONE_W=matchMedia('(max-width: 700px)');
-function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;var t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
-
-/* Deck boards, painted once per size. */
-var DECK={
-  gap:3,            // dark gap between boards (css px)
-  joist:96,         // screw line spacing
-  hueMin:27,hueMax:33,satMin:36,satMax:48,litMin:43,litMax:55
-};
-function paintDeck(ctx,w,h,boardH,seed){
-  var R=rng(seed);
-  ctx.fillStyle='#24180f'; ctx.fillRect(0,0,w,h);
-  var jOff=R()*DECK.joist;
-  for(var y=-R()*boardH*0.5; y<h; y+=boardH+DECK.gap){
-    var x=-R()*600;
-    while(x<w){
-      var len=320+R()*620, x2=Math.min(x+len,w+40);
-      var hue=DECK.hueMin+R()*(DECK.hueMax-DECK.hueMin), sat=DECK.satMin+R()*(DECK.satMax-DECK.satMin), lit=DECK.litMin+R()*(DECK.litMax-DECK.litMin);
-      ctx.save(); ctx.beginPath(); ctx.rect(x,y,x2-x,boardH); ctx.clip();
-      var tg=ctx.createLinearGradient(x,0,x2,0); tg.addColorStop(0,'hsl('+hue+','+sat+'%,'+(lit+R()*5-2.5)+'%)'); tg.addColorStop(0.5,'hsl('+(hue+R()*2-1)+','+sat+'%,'+(lit+R()*6-3)+'%)'); tg.addColorStop(1,'hsl('+hue+','+sat+'%,'+(lit+R()*5-2.5)+'%)');
-      ctx.fillStyle=tg; ctx.fillRect(x,y,x2-x,boardH);
-      // grain: long wavy fibres
-      var n=Math.round(boardH*0.9);
-      for(var g=0; g<n; g++){
-        var gy=y+R()*boardH, a1=0.6+R()*2.2, f1=0.004+R()*0.01, p1=R()*6.3, a2=R()*0.8, f2=0.03+R()*0.04, p2=R()*6.3;
-        var dark=R()<0.72;
-        ctx.strokeStyle=dark?'hsla('+(hue-4)+','+(sat+8)+'%,'+(lit-22)+'%,'+(0.08+R()*0.16)+')':'hsla('+(hue+4)+','+(sat-6)+'%,'+(lit+16)+'%,'+(0.06+R()*0.12)+')';
-        ctx.lineWidth=0.5+R()*1.4;
-        ctx.beginPath();
-        for(var gx=x; gx<=x2; gx+=10){var yy=gy+a1*Math.sin(gx*f1+p1)+a2*Math.sin(gx*f2+p2); gx===x?ctx.moveTo(gx,yy):ctx.lineTo(gx,yy);}
-        ctx.stroke();
-      }
-      // cathedral grain arcs, now and then
-      if(R()<0.55){
-        var cx=x+R()*(x2-x), cy=y+boardH*(0.3+R()*0.4);
-        for(var c=0;c<5;c++){
-          ctx.strokeStyle='hsla('+(hue-5)+','+(sat+10)+'%,'+(lit-20)+'%,'+(0.10+R()*0.08)+')'; ctx.lineWidth=0.8+R();
-          ctx.beginPath(); ctx.ellipse(cx,cy,60+c*28+R()*10,boardH*(0.12+c*0.07),0,Math.PI*0.6,Math.PI*1.4); ctx.stroke();
-        }
-      }
-      // knots
-      var k=R()<0.4?1+(R()<0.3?1:0):0;
-      for(var q=0;q<k;q++){
-        var kx=x+30+R()*(x2-x-60), ky=y+boardH*(0.25+R()*0.5), kr=3+R()*4;
-        var kg=ctx.createRadialGradient(kx,ky,0,kx,ky,kr*2.2);
-        kg.addColorStop(0,'hsla('+(hue-6)+',50%,'+(lit-34)+'%,.9)'); kg.addColorStop(0.45,'hsla('+(hue-4)+',48%,'+(lit-24)+'%,.55)'); kg.addColorStop(1,'hsla('+hue+',40%,'+lit+'%,0)');
-        ctx.fillStyle=kg; ctx.beginPath(); ctx.ellipse(kx,ky,kr*2.4,kr*1.3,0,0,7); ctx.fill();
-      }
-      // board shading: lit top edge, darker bottom edge
-      var sg=ctx.createLinearGradient(0,y,0,y+boardH);
-      sg.addColorStop(0,'rgba(255,236,200,.22)'); sg.addColorStop(0.12,'rgba(255,236,200,0)'); sg.addColorStop(0.8,'rgba(40,20,5,0)'); sg.addColorStop(1,'rgba(40,20,5,.3)');
-      ctx.fillStyle=sg; ctx.fillRect(x,y,x2-x,boardH);
-      // screws on the joist lines
-      for(var jx=jOff; jx<w; jx+=DECK.joist){
-        if(jx<x+6||jx>x2-6) continue;
-        [0.24,0.76].forEach(function(t){
-          var sx=jx+(R()-0.5)*2, sy=y+boardH*t;
-          var s=ctx.createRadialGradient(sx-0.5,sy-0.5,0,sx,sy,2.4);
-          s.addColorStop(0,'#e9e6df'); s.addColorStop(0.6,'#8f8a80'); s.addColorStop(1,'rgba(40,25,10,.6)');
-          ctx.fillStyle=s; ctx.beginPath(); ctx.arc(sx,sy,2.2,0,7); ctx.fill();
-        });
-      }
-      ctx.restore();
-      // butt joint
-      ctx.fillStyle='rgba(30,18,8,.85)'; ctx.fillRect(x2-1,y,1.6,boardH);
-      x=x2+1.6;
-    }
-  }
-  // sunlight from the top left, shade to the bottom right
-  var lg=ctx.createLinearGradient(0,0,w,h);
-  lg.addColorStop(0,'rgba(255,214,150,.16)'); lg.addColorStop(0.55,'rgba(255,214,150,0)'); lg.addColorStop(1,'rgba(20,10,0,.22)');
-  ctx.fillStyle=lg; ctx.fillRect(0,0,w,h);
-}
-
-/* Maple leaf sprites: one per colour, plus a soft shadow. */
-var LEAF_PTS=[[0,-50],[7,-37],[13,-40],[11,-18],[22,-28],[25,-22],[36,-25],[33,-12],[42,-8],[27,2],[30,8],[15,9],[12,15],[16,20],[3,16]];
-var LEAF_COLORS=[ // [base, light, vein]
-  ['#b3261b','#e0502c','#7d140e'],['#c9391f','#ef6a34','#8a1d10'],['#d85721','#f39a3d','#97350f'],
-  ['#e07a24','#f6b04a','#a24b10'],['#e6a12f','#f7d35e','#a8690f'],['#d9b23a','#efdc74','#9a7a17'],
-  ['#9c2a1d','#c94a2a','#5f140c'],['#a8582a','#d48a45','#6b3010'],['#c4472a','#ea8a3a','#7f2410']
-];
-var SPR=96; // sprite px
-function leafPath(ctx,R){
-  var j=function(){return R?(R()-0.5)*3:0;};
-  ctx.beginPath();
-  ctx.moveTo(LEAF_PTS[0][0],LEAF_PTS[0][1]);
-  for(var i=1;i<LEAF_PTS.length;i++) ctx.lineTo(LEAF_PTS[i][0]+j(),LEAF_PTS[i][1]+j());
-  for(i=LEAF_PTS.length-1;i>=1;i--) ctx.lineTo(-LEAF_PTS[i][0]+j(),LEAF_PTS[i][1]+j());
-  ctx.closePath();
-}
-function makeSprites(){
-  var R=rng(7), sprites=[];
-  LEAF_COLORS.forEach(function(c,ci){
-    for(var v=0; v<2; v++){
-      var cv=document.createElement('canvas'); cv.width=cv.height=SPR;
-      var x=cv.getContext('2d'); x.translate(SPR/2,SPR/2+2); x.scale(SPR/104,SPR/104);
-      x.rotate((R()-0.5)*0.12);
-      leafPath(x,R);
-      var g=x.createRadialGradient(-6,-14,2,0,0,56);
-      g.addColorStop(0,c[1]); g.addColorStop(0.75,c[0]); g.addColorStop(1,c[2]);
-      x.fillStyle=g; x.fill();
-      x.save(); x.clip();
-      // blotches: autumn leaves are never one flat colour
-      for(var b=0;b<5;b++){
-        x.fillStyle=(R()<0.5?c[2]:c[1]); x.globalAlpha=0.12+R()*0.18;
-        x.beginPath(); x.ellipse((R()-0.5)*60,(R()-0.6)*60,6+R()*14,4+R()*10,R()*3,0,7); x.fill();
-      }
-      if(v===1){ x.fillStyle='#5a3214'; x.globalAlpha=0.35; for(b=0;b<4;b++){x.beginPath();x.arc((R()-0.5)*50,(R()-0.6)*50,1+R()*2.5,0,7);x.fill();} }
-      x.globalAlpha=1; x.restore();
-      // veins
-      x.strokeStyle=c[2]; x.globalAlpha=0.55; x.lineCap='round';
-      [[0,-46],[38,-9],[-38,-9],[32,-22],[-32,-22],[15,18],[-15,18]].forEach(function(t,k){
-        x.lineWidth=k<3?1.6:1.1; x.beginPath(); x.moveTo(0,12); x.quadraticCurveTo(t[0]*0.45,t[1]*0.5+6,t[0]*0.92,t[1]*0.92); x.stroke();
-      });
-      x.globalAlpha=0.35; x.strokeStyle=c[1]; x.lineWidth=0.8;
-      x.beginPath(); x.moveTo(1,12); x.lineTo(1,-44); x.stroke();
-      // stem
-      x.globalAlpha=1; x.strokeStyle=c[2]; x.lineWidth=2.6; x.beginPath(); x.moveTo(0,14); x.quadraticCurveTo(2,28,-2,40); x.stroke();
-      sprites.push(cv);
-    }
-  });
-  var sh=document.createElement('canvas'); sh.width=sh.height=SPR;
-  var s=sh.getContext('2d'); s.translate(SPR/2,SPR/2+2); s.scale(SPR/104,SPR/104);
-  try{s.filter='blur(2px)';}catch(e){}
-  leafPath(s,null); s.fillStyle='#1e1006'; s.fill();
-  s.lineWidth=3; s.strokeStyle='#1e1006'; s.beginPath(); s.moveTo(0,14); s.lineTo(-2,40); s.stroke();
-  return {leaves:sprites, shadow:sh};
-}
-var SPRITES=makeSprites();
-
-/* One pointer for the whole page: mouse, pen and finger. */
-var P={x:-9999,y:-9999,vx:0,vy:0,active:false,t:0,lastX:-9999,lastY:-9999};
-function setP(x,y){P.x=x;P.y=y;P.active=true;P.t=performance.now();}
-addEventListener('pointermove',function(e){setP(e.clientX,e.clientY);},{passive:true});
-addEventListener('pointerdown',function(e){setP(e.clientX,e.clientY);P.lastX=P.x;P.lastY=P.y;},{passive:true});
-addEventListener('touchmove',function(e){var t=e.touches[0]; if(t) setP(t.clientX,t.clientY);},{passive:true});
-function release(e){ if(!e.pointerType||e.pointerType!=='mouse'){P.active=false;} }
-addEventListener('pointerup',release,{passive:true});
-addEventListener('pointercancel',function(){P.active=false;},{passive:true});
-addEventListener('touchend',function(){P.active=false;},{passive:true});
-document.documentElement.addEventListener('mouseleave',function(){P.active=false;});
-
-/* A scene owns a canvas, a painted deck and some leaves. */
-function Scene(canvas,opts){
-  this.c=canvas; this.ctx=canvas.getContext('2d'); this.o=opts; this.visible=true;
-  this.w=0; this.h=0; this.leaves=[]; this.deck=document.createElement('canvas');
-  var self=this;
-  if('IntersectionObserver' in window){
-    new IntersectionObserver(function(es){self.visible=es[0].isIntersecting; if(self.visible) kick();}).observe(canvas);
-  }
-}
-Scene.prototype.size=function(){
-  var r=this.c.getBoundingClientRect(), w=Math.round(r.width), h=Math.round(r.height);
-  if(w===this.w&&h===this.h) return false; // phones fire resize when the address bar moves; ignore
-  this.w=w; this.h=h;
-  this.dpr=Math.min(devicePixelRatio||1,1.5);
-  this.c.width=Math.round(w*this.dpr); this.c.height=Math.round(h*this.dpr);
-  this.deck.width=this.c.width; this.deck.height=this.c.height;
-  var d=this.deck.getContext('2d'); d.setTransform(this.dpr,0,0,this.dpr,0,0);
-  paintDeck(d,w,h,this.o.boardH(),this.o.seed);
-  return true;
-};
-Scene.prototype.drawLeaf=function(L,shadow){
-  var x=this.ctx, s=L.size*(1+L.z/260), sy=L.flat;
-  var dx=shadow?L.z*0.38+1.4:0, dy=shadow?L.z*0.55+2.2:0;
-  x.save();
-  x.translate((L.x+dx)*this.dpr,(L.y+dy)*this.dpr);
-  x.rotate(L.rot);
-  x.scale(s*this.dpr/SPR, s*this.dpr*sy/SPR);
-  if(shadow){ x.globalAlpha=Math.max(0.12,0.42-L.z/400); x.drawImage(SPRITES.shadow,-SPR/2,-SPR/2); }
-  else x.drawImage(SPRITES.leaves[L.spr],-SPR/2,-SPR/2);
-  x.restore();
-};
-Scene.prototype.render=function(){
-  var x=this.ctx;
-  x.setTransform(1,0,0,1,0,0); x.globalAlpha=1;
-  x.drawImage(this.deck,0,0);
-  var ground=[],air=[];
-  for(var i=0;i<this.leaves.length;i++){var L=this.leaves[i]; (L.z>0.5?air:ground).push(L);}
-  for(i=0;i<ground.length;i++) this.drawLeaf(ground[i],true);
-  for(i=0;i<ground.length;i++) this.drawLeaf(ground[i],false);
-  for(i=0;i<air.length;i++) this.drawLeaf(air[i],true);
-  for(i=0;i<air.length;i++) this.drawLeaf(air[i],false);
-};
-function newLeaf(R,x,y,z,sizeMin,sizeMax){
-  return {x:x,y:y,z:z,vx:0,vy:0,vz:0,rot:R()*6.283,vr:0,
-    flip:R()*6.283,flipV:2+R()*3,flat:1,size:sizeMin+R()*(sizeMax-sizeMin),
-    spr:Math.floor(R()*SPRITES.leaves.length),sway:R()*6.283,swayF:0.8+R()*0.9,
-    hx:x,hy:y,hr:0,ox:0,oy:0};
-}
-
-/* =========================================================
-   Hero deck: leaves fall, wind gusts sweep, your finger blows
-   ========================================================= */
-var HERO={
-  density:1/2300,   // resting leaves per px² at start (phone)
-  densityDesk:1/3600,
-  maxLeaves:260,
-  phoneMax:90,
-  refill:5,       // new leaves per second per 100k px² when below target
-  trickle:0.35,     // leaves per second per 100k px² that fall regardless, so the deck is never still
-  fallSpeed:34,     // px/s downward through the air (z)
-  wind:14,          // steady drift px/s
-  radius:84,        // blower reach (css px); desktop x1.2
-  push:2600,        // blower strength
-  carry:0.55,       // share of the finger's own speed handed to leaves
-  lift:220,         // how hard leaves jump when blown
-  gravity:420,
-  groundFric:3.2, airFric:1.0,
-  gustEvery:[4.5,7.5],// seconds between gusts while nobody is touching
-  gustPush:220,     // how hard a gust shoves a leaf
-  gustIdle:9,       // seconds after the last touch before gusts return
-  sizePhone:[34,50], sizeDesk:[42,62]
-};
-var heroScene=null;
+/* ===== Floating text circle: shows after the hero, hides while the form is on screen ===== */
 (function(){
-  var cv=document.getElementById('deckCanvas'); if(!cv) return;
-  var R=rng(20261017);
-  var S=new Scene(cv,{seed:1818,boardH:function(){return PHONE_W.matches?44:54;}});
-  heroScene=S;
-  var target=0, sizes=HERO.sizePhone, gust=null, nextGust=5, lastTouch=-1e9, hint=document.getElementById('hint'), touched=false, acc=0;
-  function setup(){
-    if(!S.size()) return;
-    sizes=PHONE_W.matches?HERO.sizePhone:HERO.sizeDesk;
-    target=Math.min(Math.round(S.w*S.h*(PHONE_W.matches?HERO.density:HERO.densityDesk)),PHONE_W.matches?HERO.phoneMax:HERO.maxLeaves);
-    if(!S.leaves.length){
-      for(var i=0;i<target;i++){var L=newLeaf(R,R()*S.w,R()*S.h,0,sizes[0],sizes[1]); L.flat=0.75+R()*0.25; S.leaves.push(L);}
-    }
-    S.render();
-  }
-  S.setup=setup;
-  function spawnFalling(){
-    var L=newLeaf(R,R()*(S.w+80)-60,R()*S.h-20,90+R()*120,sizes[0],sizes[1]);
-    L.vx=HERO.wind*(0.5+R()); S.leaves.push(L);
-  }
-  S.step=function(dt,now){
-    var r=cv.getBoundingClientRect(); // read every frame: the page scrolls under the finger
-    var px=P.x-r.left, py=P.y-r.top;
-    var inside=P.active&&px>-40&&py>-40&&px<S.w+40&&py<S.h+40;
-    var pvx=0,pvy=0;
-    if(inside){
-      if(P.lastX>-9000){pvx=(P.x-P.lastX)/dt; pvy=(P.y-P.lastY)/dt;}
-      var speed=Math.hypot(pvx,pvy); if(speed>2400){pvx*=2400/speed;pvy*=2400/speed;}
-      lastTouch=now; if(!touched&&speed>40){touched=true; hint.classList.add('gone');}
-    }
-    P.lastX=P.x; P.lastY=P.y;
-    var rad=HERO.radius*(PHONE_W.matches?1:1.4), rad2=rad*rad;
-    // wind gusts play the job until someone takes over
-    if(!REDUCED&&!gust&&now-lastTouch>HERO.gustIdle*1000){ nextGust-=dt; if(nextGust<=0){
-      var dir=R()<0.5?1:-1; gust={x:dir>0?-160:S.w+160,dir:dir,y:S.h*(0.15+R()*0.7),band:S.h*(0.10+R()*0.08),speed:(S.w+320)/(1.8+R()*0.9),k:0.9+R()*0.4};
-      nextGust=HERO.gustEvery[0]+R()*(HERO.gustEvery[1]-HERO.gustEvery[0]); } }
-    if(gust){ gust.x+=gust.dir*gust.speed*dt; if(gust.x<-200||gust.x>S.w+200) gust=null; }
-    for(var i=S.leaves.length-1;i>=0;i--){
-      var L=S.leaves[i];
-      if(inside){
-        var dx=L.x-px, dy=L.y-py, d2=dx*dx+dy*dy;
-        if(d2<rad2){
-          var d=Math.sqrt(d2)||1, f=1-d/rad;
-          L.vx+=(dx/d*HERO.push*f*f+pvx*HERO.carry*f)*dt*(L.z>0?0.6:1);
-          L.vy+=(dy/d*HERO.push*f*f+pvy*HERO.carry*f)*dt*(L.z>0?0.6:1);
-          if(L.z<8) L.vz+=HERO.lift*f*dt*6*Math.min(1,0.25+Math.hypot(pvx,pvy)/900);
-          L.vr+=(R()-0.5)*16*f*dt*10;
-        }
-      }
-      if(gust){
-        var gd=Math.abs(L.x-gust.x), gy=Math.abs(L.y-gust.y);
-        if(gd<140&&gy<gust.band){ var gf=(1-gd/140)*(1-gy/gust.band)*gust.k;
-          L.vx+=gust.dir*HERO.gustPush*gf*dt*4; L.vy+=(R()-0.5)*160*gf*dt*4; if(L.z<6) L.vz+=90*gf*dt*4; L.vr+=gust.dir*(R()*6)*gf*dt*4; }
-      }
-      if(L.z>0||L.vz>0){
-        // airborne: tumble and drift
-        L.flip+=L.flipV*dt; L.flat=0.3+0.7*Math.abs(Math.cos(L.flip));
-        if(L.vz<=0&&L.z>2){ // falling leaf: settle toward terminal drift
-          L.vz+=(-HERO.fallSpeed-L.vz)*Math.min(1,dt*2.5);
-          L.sway+=L.swayF*dt*2;
-          L.x+=Math.sin(L.sway)*22*dt; L.vx+=(HERO.wind-L.vx)*dt*0.4;
-        } else L.vz-=HERO.gravity*dt;
-        L.z+=L.vz*dt;
-        var af=Math.exp(-HERO.airFric*dt); L.vx*=af; L.vy*=af;
-        if(L.z<=0){L.z=0; L.vz=0; L.vr*=0.4;}
-      } else {
-        L.flat+=(0.82-L.flat)*Math.min(1,dt*6);
-        var gf2=Math.exp(-HERO.groundFric*dt); L.vx*=gf2; L.vy*=gf2;
-      }
-      L.x+=L.vx*dt; L.y+=L.vy*dt;
-      L.rot+=L.vr*dt; L.vr*=Math.exp(-2.5*dt);
-      if(L.x<-60||L.x>S.w+60||L.y<-60||L.y>S.h+60) S.leaves.splice(i,1); // swept off the deck
-    }
-    // the trees never stop: refill slowly
-    var rate=REDUCED?0:S.leaves.length<target?HERO.refill:(S.leaves.length<target*1.25?HERO.trickle:0);
-    acc+=rate*(S.w*S.h/100000)*dt; while(acc>=1){acc-=1; spawnFalling();}
-    S.render();
-  };
+  var fl=document.getElementById('float');if(!fl)return;
+  if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
+  var pastHero=false,formIn=false;
+  function sync(){var on=pastHero&&!formIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
+  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('quoteForm'));
+  sync();
 })();
 
-/* =========================================================
-   Resting leaves (work panel, edge strip): pushed by the
-   pointer, spring back with a small wobble
-   ========================================================= */
-var SPRING={k:38,damp:6.5,radius:90,push:1500,carry:0.35};
-function makeRestingScene(id,opts){
-  var cv=document.getElementById(id); if(!cv) return null;
-  var S=new Scene(cv,opts), R=rng(opts.seed);
-  S.setup=function(){
-    if(!S.size()) return;
-    S.leaves=[];
-    var n=opts.count(S.w,S.h), sz=PHONE_W.matches?[30,44]:[38,54];
-    for(var i=0;i<n;i++){
-      var p=opts.place(R,S.w,S.h), L=newLeaf(R,p[0],p[1],0,sz[0],sz[1]);
-      L.flat=0.78+R()*0.22; L.hr=L.rot; S.leaves.push(L);
-    }
-    S.render();
-  };
-  S.step=function(dt){
-    var r=cv.getBoundingClientRect(), px=P.x-r.left, py=P.y-r.top;
-    var on=P.active&&px>-60&&py>-60&&px<S.w+60&&py<S.h+60, pvx=0, pvy=0;
-    if(on&&S.lx!==undefined){pvx=(P.x-S.lx)/dt; pvy=(P.y-S.ly)/dt;}
-    S.lx=P.x; S.ly=P.y;
-    var rad=SPRING.radius, moving=false;
-    for(var i=0;i<S.leaves.length;i++){
-      var L=S.leaves[i], x=L.hx+L.ox, y=L.hy+L.oy;
-      if(on){var dx=x-px, dy=y-py, d=Math.hypot(dx,dy);
-        if(d<rad){var f=1-d/rad; d=d||1; L.vx+=(dx/d*SPRING.push*f+pvx*SPRING.carry*f)*dt; L.vy+=(dy/d*SPRING.push*f+pvy*SPRING.carry*f)*dt;}}
-      L.vx+=(-SPRING.k*L.ox-SPRING.damp*L.vx)*dt; L.vy+=(-SPRING.k*L.oy-SPRING.damp*L.vy)*dt;
-      L.ox+=L.vx*dt; L.oy+=L.vy*dt;
-      L.x=L.hx+L.ox; L.y=L.hy+L.oy; L.rot=L.hr+L.ox*0.03;
-      L.z=Math.min(14,Math.hypot(L.vx,L.vy)*0.03);
-      if(Math.abs(L.vx)+Math.abs(L.vy)>0.5) moving=true;
-    }
-    if(moving||on||!S.drawn){S.render(); S.drawn=true;}
-  };
-  return S;
-}
-var boardsScene=makeRestingScene('boardsCanvas',{seed:506,boardH:function(){return PHONE_W.matches?37:46;},
-  count:function(w,h){return Math.round(w*h/16000);},
-  place:function(R,w,h){return [R()*w,R()*h];}});
-var edgeScene=makeRestingScene('edgeCanvas',{seed:607,boardH:function(){return 35;},
-  count:function(w){return Math.round(w/95);},
-  place:function(R,w,h){return [R()*w,h*(0.2+R()*0.6)];}});
-
-/* =========================================================
-   One loop for everything; stops when nothing is on screen
-   ========================================================= */
-var scenes=[heroScene,boardsScene,edgeScene].filter(Boolean);
-var running=false, last=0;
-function setupAll(){scenes.forEach(function(s){s.setup();});}
-function frame(t){
-  var dt=Math.min(0.05,(t-last)/1000||0.016); last=t;
-  var any=false;
-  scenes.forEach(function(s){ if(s.visible){any=true; s.step(dt,t);} });
-  if(any) requestAnimationFrame(frame); else running=false;
-}
-function kick(){ if(running) return; running=true; last=performance.now(); requestAnimationFrame(frame); }
-setupAll();
-var rz; addEventListener('resize',function(){ clearTimeout(rz); rz=setTimeout(setupAll,150); });
-if(!REDUCED) kick();
-if(REDUCED) document.getElementById('deckCanvas').addEventListener('pointerdown',kick,{passive:true});
+/* ===== Fade-up: everything is visible at rest; only what starts below the first screen rises 12px in ===== */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('below');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('below');io.observe(el)}});
 })();
 </script>
 </body>
