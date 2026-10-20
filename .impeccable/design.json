@@ -1,445 +1,443 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T22:33:13.216249+00:00",
+  "generatedAt": "2026-10-20T01:36:12.643064+00:00",
   "title": "Design System: Maple Outdoor Builds",
   "extensions": {
     "colorMeta": {
-      "forest-night": {
+      "amber": {
         "role": "primary",
-        "displayName": "Forest Night",
+        "displayName": "Maple Amber",
+        "canonical": "#f2a93b",
         "tonalRamp": [
-          "oklch(15% 0.04 155)",
-          "oklch(25% 0.04 155)",
-          "oklch(35% 0.04 155)",
-          "oklch(47% 0.04 155)",
-          "oklch(60% 0.04 155)",
-          "oklch(72% 0.04 155)",
-          "oklch(84% 0.04 155)",
-          "oklch(95% 0.04 155)"
+          "#482d05",
+          "#7c4e08",
+          "#b16f0c",
+          "#e6900f",
+          "#f2a93b",
+          "#f5c070",
+          "#f9d9a9",
+          "#fdf5e7"
         ]
       },
-      "forest": {
+      "amber-2": {
         "role": "primary",
-        "displayName": "Forest",
+        "displayName": "Amber Light",
+        "canonical": "#f7bd62",
         "tonalRamp": [
-          "oklch(15% 0.05 155)",
-          "oklch(25% 0.05 155)",
-          "oklch(35% 0.05 155)",
-          "oklch(47% 0.05 155)",
-          "oklch(60% 0.05 155)",
-          "oklch(72% 0.05 155)",
-          "oklch(84% 0.05 155)",
-          "oklch(95% 0.05 155)"
+          "#492e04",
+          "#7e5006",
+          "#b47109",
+          "#e9930c",
+          "#f5ab38",
+          "#f8c26d",
+          "#fbdaa8",
+          "#fef5e7"
         ]
       },
-      "forest-lift": {
+      "amber-ink": {
         "role": "primary",
-        "displayName": "Forest Lift",
+        "displayName": "Amber Ink",
+        "canonical": "#8a4b00",
         "tonalRamp": [
-          "oklch(15% 0.07 152)",
-          "oklch(25% 0.07 152)",
-          "oklch(35% 0.07 152)",
-          "oklch(47% 0.07 152)",
-          "oklch(60% 0.07 152)",
-          "oklch(72% 0.07 152)",
-          "oklch(84% 0.07 152)",
-          "oklch(95% 0.07 152)"
+          "#4c2a00",
+          "#854800",
+          "#bd6700",
+          "#f58500",
+          "#ffa02e",
+          "#ffb966",
+          "#ffd5a3",
+          "#fff3e5"
         ]
       },
-      "harvest": {
+      "navy": {
         "role": "secondary",
-        "displayName": "Harvest",
+        "displayName": "Forest Green",
+        "canonical": "#1d4630",
         "tonalRamp": [
-          "oklch(15% 0.07 60)",
-          "oklch(25% 0.07 60)",
-          "oklch(35% 0.07 60)",
-          "oklch(47% 0.07 60)",
-          "oklch(60% 0.07 60)",
-          "oklch(72% 0.07 60)",
-          "oklch(84% 0.07 60)",
-          "oklch(95% 0.07 60)"
+          "#163625",
+          "#275e40",
+          "#37855b",
+          "#48ad77",
+          "#6bc293",
+          "#93d2b0",
+          "#bee4d0",
+          "#edf8f2"
         ]
       },
-      "maple": {
-        "role": "tertiary",
-        "displayName": "Maple",
+      "deep": {
+        "role": "secondary",
+        "displayName": "Deep Forest",
+        "canonical": "#122c1e",
         "tonalRamp": [
-          "oklch(15% 0.15 35)",
-          "oklch(25% 0.15 35)",
-          "oklch(35% 0.15 35)",
-          "oklch(47% 0.15 35)",
-          "oklch(60% 0.15 35)",
-          "oklch(72% 0.15 35)",
-          "oklch(84% 0.15 35)",
-          "oklch(95% 0.15 35)"
+          "#0c1e14",
+          "#265e40",
+          "#37865b",
+          "#47ae76",
+          "#6bc293",
+          "#92d3b0",
+          "#bee4d0",
+          "#edf8f2"
         ]
       },
-      "maple-bright": {
-        "role": "tertiary",
-        "displayName": "Maple Bright",
-        "tonalRamp": [
-          "oklch(15% 0.13 45)",
-          "oklch(25% 0.13 45)",
-          "oklch(35% 0.13 45)",
-          "oklch(47% 0.13 45)",
-          "oklch(60% 0.13 45)",
-          "oklch(72% 0.13 45)",
-          "oklch(84% 0.13 45)",
-          "oklch(95% 0.13 45)"
-        ]
-      },
-      "cream": {
+      "paper": {
         "role": "neutral",
-        "displayName": "Cream",
+        "displayName": "Paper",
+        "canonical": "#f4f6f2",
         "tonalRamp": [
-          "oklch(15% 0.025 85)",
-          "oklch(25% 0.025 85)",
-          "oklch(35% 0.025 85)",
-          "oklch(47% 0.025 85)",
-          "oklch(60% 0.025 85)",
-          "oklch(72% 0.025 85)",
-          "oklch(84% 0.025 85)",
-          "oklch(95% 0.025 85)"
+          "#262d1f",
+          "#424e36",
+          "#5e704d",
+          "#7a9164",
+          "#96a983",
+          "#b3c0a5",
+          "#d1d9c9",
+          "#f2f5f0"
         ]
       },
-      "cream-deep": {
+      "card": {
         "role": "neutral",
-        "displayName": "Cream Deep",
+        "displayName": "Card White",
+        "canonical": "#ffffff",
         "tonalRamp": [
-          "oklch(15% 0.03 85)",
-          "oklch(25% 0.03 85)",
-          "oklch(35% 0.03 85)",
-          "oklch(47% 0.03 85)",
-          "oklch(60% 0.03 85)",
-          "oklch(72% 0.03 85)",
-          "oklch(84% 0.03 85)",
-          "oklch(95% 0.03 85)"
+          "#262626",
+          "#424242",
+          "#5e5e5e",
+          "#7a7a7a",
+          "#969696",
+          "#b2b2b2",
+          "#d1d1d1",
+          "#f2f2f2"
         ]
       },
-      "cream-rule": {
+      "field": {
         "role": "neutral",
-        "displayName": "Cream Rule",
+        "displayName": "Field Mist",
+        "canonical": "#e5ece5",
         "tonalRamp": [
-          "oklch(15% 0.035 85)",
-          "oklch(25% 0.035 85)",
-          "oklch(35% 0.035 85)",
-          "oklch(47% 0.035 85)",
-          "oklch(60% 0.035 85)",
-          "oklch(72% 0.035 85)",
-          "oklch(84% 0.035 85)",
-          "oklch(95% 0.035 85)"
+          "#202c20",
+          "#384d38",
+          "#506d50",
+          "#678d67",
+          "#86a786",
+          "#a7bea7",
+          "#cad8ca",
+          "#f0f4f0"
         ]
       },
       "ink": {
         "role": "neutral",
-        "displayName": "Ink",
+        "displayName": "Forest Ink",
+        "canonical": "#13301f",
         "tonalRamp": [
-          "oklch(15% 0.03 155)",
-          "oklch(25% 0.03 155)",
-          "oklch(35% 0.03 155)",
-          "oklch(47% 0.03 155)",
-          "oklch(60% 0.03 155)",
-          "oklch(72% 0.03 155)",
-          "oklch(84% 0.03 155)",
-          "oklch(95% 0.03 155)"
+          "#163723",
+          "#265f3d",
+          "#368757",
+          "#45af71",
+          "#69c48f",
+          "#91d4ad",
+          "#bde5ce",
+          "#edf8f1"
         ]
       },
-      "ink-soft": {
+      "body": {
         "role": "neutral",
-        "displayName": "Ink Soft",
+        "displayName": "Body Green-Grey",
+        "canonical": "#28382e",
         "tonalRamp": [
-          "oklch(15% 0.025 155)",
-          "oklch(25% 0.025 155)",
-          "oklch(35% 0.025 155)",
-          "oklch(47% 0.025 155)",
-          "oklch(60% 0.025 155)",
-          "oklch(72% 0.025 155)",
-          "oklch(84% 0.025 155)",
-          "oklch(95% 0.025 155)"
+          "#202d25",
+          "#374d40",
+          "#4f6e5a",
+          "#668f75",
+          "#85a892",
+          "#a6bfaf",
+          "#c9d9cf",
+          "#f0f4f2"
         ]
       },
-      "cream-on-green": {
+      "soft": {
         "role": "neutral",
-        "displayName": "Cream on Green",
+        "displayName": "Soft Green-Grey",
+        "canonical": "#4a5a50",
         "tonalRamp": [
-          "oklch(15% 0.025 85)",
-          "oklch(25% 0.025 85)",
-          "oklch(35% 0.025 85)",
-          "oklch(47% 0.025 85)",
-          "oklch(60% 0.025 85)",
-          "oklch(72% 0.025 85)",
-          "oklch(84% 0.025 85)",
-          "oklch(95% 0.025 85)"
+          "#232a25",
+          "#3c4941",
+          "#55685c",
+          "#6e8677",
+          "#8ca194",
+          "#abbab1",
+          "#cdd6d0",
+          "#f1f3f2"
         ]
       },
-      "sage-muted": {
+      "on-dark": {
         "role": "neutral",
-        "displayName": "Sage Muted",
+        "displayName": "On-Dark",
+        "canonical": "#f4f6f1",
         "tonalRamp": [
-          "oklch(15% 0.02 145)",
-          "oklch(25% 0.02 145)",
-          "oklch(35% 0.02 145)",
-          "oklch(47% 0.02 145)",
-          "oklch(60% 0.02 145)",
-          "oklch(72% 0.02 145)",
-          "oklch(84% 0.02 145)",
-          "oklch(95% 0.02 145)"
+          "#282f1e",
+          "#455134",
+          "#62734a",
+          "#809560",
+          "#9bad80",
+          "#b6c3a2",
+          "#d3dbc7",
+          "#f3f5ef"
         ]
       },
-      "error-on-green": {
+      "on-dark-soft": {
         "role": "neutral",
-        "displayName": "Error on Green",
+        "displayName": "On-Dark Soft",
+        "canonical": "#c6d5c9",
         "tonalRamp": [
-          "oklch(15% 0.1 50)",
-          "oklch(25% 0.1 50)",
-          "oklch(35% 0.1 50)",
-          "oklch(47% 0.1 50)",
-          "oklch(60% 0.1 50)",
-          "oklch(72% 0.1 50)",
-          "oklch(84% 0.1 50)",
-          "oklch(95% 0.1 50)"
+          "#202c23",
+          "#384c3c",
+          "#506d56",
+          "#688d6f",
+          "#87a68d",
+          "#a7beac",
+          "#cad8cd",
+          "#f0f4f1"
         ]
       },
-      "board": {
+      "error": {
         "role": "neutral",
-        "displayName": "Board",
+        "displayName": "Error Red",
+        "canonical": "#b3261e",
         "tonalRamp": [
-          "oklch(15% 0.09 65)",
-          "oklch(25% 0.09 65)",
-          "oklch(35% 0.09 65)",
-          "oklch(47% 0.09 65)",
-          "oklch(60% 0.09 65)",
-          "oklch(72% 0.09 65)",
-          "oklch(84% 0.09 65)",
-          "oklch(95% 0.09 65)"
-        ]
-      },
-      "board-gap": {
-        "role": "neutral",
-        "displayName": "Board Gap",
-        "tonalRamp": [
-          "oklch(15% 0.03 60)",
-          "oklch(25% 0.03 60)",
-          "oklch(35% 0.03 60)",
-          "oklch(47% 0.03 60)",
-          "oklch(60% 0.03 60)",
-          "oklch(72% 0.03 60)",
-          "oklch(84% 0.03 60)",
-          "oklch(95% 0.03 60)"
-        ]
-      },
-      "print-paper": {
-        "role": "neutral",
-        "displayName": "Print Paper",
-        "tonalRamp": [
-          "oklch(15% 0.012 85)",
-          "oklch(25% 0.012 85)",
-          "oklch(35% 0.012 85)",
-          "oklch(47% 0.012 85)",
-          "oklch(60% 0.012 85)",
-          "oklch(72% 0.012 85)",
-          "oklch(84% 0.012 85)",
-          "oklch(95% 0.012 85)"
+          "#420e0b",
+          "#721813",
+          "#a2221b",
+          "#d22d23",
+          "#e1544c",
+          "#e9827c",
+          "#f2b4b0",
+          "#fbeae9"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Hero h1 only; uppercase, two lines, second in Harvest. Desktop clamp(56px,4.8vw,76px)."
+        "purpose": "Hero H1 only, white on the photo overlay, last phrase amber; letters bounce in once."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section h2s, uppercase, text-wrap balance."
+        "purpose": "Band headings; closing phrase amber on dark bands."
+      },
+      "phone-display": {
+        "displayName": "Phone Display",
+        "purpose": "The big tap-to-call number in the closing band."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Service rows, step titles, Small jobs welcome."
+        "purpose": "Service rows and the Facebook link card."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The line under a band heading, max 38ch."
+      },
+      "promise": {
+        "displayName": "Promise",
+        "purpose": "The hero tagline."
+      },
+      "close-line": {
+        "displayName": "Close Line",
+        "purpose": "The who-we-are line in the closing band."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Copy at 17px (18px from 1024px), 34-44ch."
+        "purpose": "All running text, 16/1.7."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Service group headings and print captions, uppercase tracked."
+        "purpose": "Uppercase service group headings on green."
       }
     },
     "shadows": [
       {
-        "name": "panel-lift",
-        "value": "0 18px 40px -18px rgba(40,25,10,.55)",
-        "purpose": "Boards panel on the cream band."
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(10,30,18,.3)",
+        "purpose": "The floating text circle only; nothing else in the system is lifted."
+      }
+    ],
+    "overlays": [
+      {
+        "name": "hero-overlay",
+        "value": "linear-gradient(180deg,rgba(18,44,30,.86) 0%,rgba(18,44,30,.8) 55%,rgba(18,44,30,.86) 100%)",
+        "purpose": "Deep-forest wash over the hero photo."
       },
       {
-        "name": "print-on-wood",
-        "value": "0 2px 3px rgba(30,15,5,.35), 0 16px 30px -10px rgba(30,15,5,.6)",
-        "purpose": "Photo prints on boards."
+        "name": "photo-scrim",
+        "value": "linear-gradient(180deg,transparent,rgba(12,30,20,.72))",
+        "purpose": "Bottom 45% of a photo card, behind its caption."
       },
       {
-        "name": "focus-halo",
-        "value": "0 0 0 3px rgba(240,138,90,.3)",
-        "purpose": "Fields and chips on green, with Maple Bright border."
+        "name": "line-texture",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Faint diagonal lines on Deep Forest bands and the footer."
       }
     ],
     "motion": [
       {
+        "name": "letter-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), 20ms stagger, from translateX(50px)",
+        "purpose": "Hero H1 letter bounce-in, once, after Cal Sans loads (900ms limit)."
+      },
+      {
+        "name": "rise",
+        "value": "opacity/transform .4s ease-out from translateY(12px)",
+        "purpose": "One fade-up for content below the first screen."
+      },
+      {
+        "name": "float-in",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Floating text circle slides up once the hero is gone."
+      },
+      {
         "name": "state",
-        "value": "0.18s",
-        "purpose": "Buttons and service arrow colour/transform."
-      },
-      {
-        "name": "field",
-        "value": "0.15s",
-        "purpose": "Chip and field border colour."
-      },
-      {
-        "name": "press",
-        "value": "scale(.98)",
-        "purpose": "Button :active."
-      },
-      {
-        "name": "hero-sweep",
-        "value": "HERO{density:1/2300,densityDesk:1/3600,maxLeaves:260,phoneMax:90,refill:5,trickle:0.35,fallSpeed:34,wind:14,radius:84,push:2600,carry:0.55,lift:220,gravity:420,groundFric:3.2,airFric:1.0,gustEvery:[4.5,7.5],gustPush:220,gustIdle:9}",
-        "purpose": "Hero leaf physics."
-      },
-      {
-        "name": "resting-spring",
-        "value": "SPRING{k:38,damp:6.5,radius:90,push:1500,carry:0.35}",
-        "purpose": "Boards panel and edge strip leaves."
-      },
-      {
-        "name": "loop",
-        "value": "single rAF, dt<=0.05s, IntersectionObserver pause",
-        "purpose": "All canvas scenes; stops off screen; reduced motion disables gusts/refill."
+        "value": ".2s (buttons, arrows), .15s (fields, chips); press scale(.98)",
+        "purpose": "Hover and press transitions."
       }
     ],
     "breakpoints": [
       {
-        "name": "tight",
-        "value": "374px",
-        "dir": "max"
+        "name": "tiny",
+        "value": "340px"
       },
       {
-        "name": "sm",
-        "value": "640px"
+        "name": "small",
+        "value": "380px"
       },
       {
-        "name": "lg",
+        "name": "wide",
+        "value": "760px"
+      },
+      {
+        "name": "desktop",
         "value": "1024px"
       }
     ]
   },
   "components": [
     {
-      "name": "Cream Button",
+      "name": "Primary Button",
       "kind": "button",
-      "refersTo": "button-cream",
-      "description": "Primary CTA on green grounds.",
-      "html": "<div class=\"ds-green-ground\"><a class=\"ds-btn ds-btn-cream\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z\"/></svg>Text for a free estimate</a></div>",
-      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 24px;border-radius:999px;border:2px solid transparent;font:800 17px/1.2 var(--font);text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s,transform .18s}.ds-btn:active{transform:scale(.98)}.ds-btn svg{width:20px;height:20px}.ds-green-ground{background:var(--green-800);padding:24px;display:flex;gap:10px;flex-wrap:wrap}.ds-green-ground :focus-visible{outline:3px solid var(--maple-bright);outline-offset:3px}.ds-btn-cream{background:var(--cream);color:var(--green-800);border-color:var(--cream)}.ds-btn-cream:hover{background:#fff;border-color:#fff}"
+      "refersTo": "button-primary",
+      "description": "Amber pill for the one main action in a band.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Get a free estimate</a>",
+      "css": ":host{--paper:#f4f6f2;--card:#ffffff;--field:#e5ece5;--ink:#13301f;--soft:#4a5a50;--navy:#1d4630;--deep:#122c1e;--on-dark:#f4f6f1;--on-dark-soft:#c6d5c9;--amber:#f2a93b;--amber-2:#f7bd62;--focus:#1d4630;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 var(--display);text-decoration:none;background:var(--amber);color:var(--ink);border:2px solid var(--amber);transition:background-color .2s,border-color .2s,transform .12s} .ds-btn-primary:hover{background:var(--amber-2);border-color:var(--amber-2)} .ds-btn-primary:active{transform:scale(.98)} .ds-btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
     },
     {
-      "name": "Line Button",
+      "name": "Ghost Button",
       "kind": "button",
-      "refersTo": "button-line",
-      "description": "Secondary action on green grounds.",
-      "html": "<div class=\"ds-green-ground\"><a class=\"ds-btn ds-btn-line\" href=\"#\">See our work</a></div>",
-      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 24px;border-radius:999px;border:2px solid transparent;font:800 17px/1.2 var(--font);text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s,transform .18s}.ds-btn:active{transform:scale(.98)}.ds-btn svg{width:20px;height:20px}.ds-green-ground{background:var(--green-800);padding:24px;display:flex;gap:10px;flex-wrap:wrap}.ds-green-ground :focus-visible{outline:3px solid var(--maple-bright);outline-offset:3px}.ds-btn-line{background:transparent;color:var(--cream);border-color:rgba(245,239,226,.55)}.ds-btn-line:hover{border-color:var(--cream);background:rgba(245,239,226,.08)}"
+      "refersTo": "button-ghost",
+      "description": "Outlined pill beside the primary on the photo hero.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Text us</a></div>",
+      "css": ":host{--paper:#f4f6f2;--card:#ffffff;--field:#e5ece5;--ink:#13301f;--soft:#4a5a50;--navy:#1d4630;--deep:#122c1e;--on-dark:#f4f6f1;--on-dark-soft:#c6d5c9;--amber:#f2a93b;--amber-2:#f7bd62;--focus:#1d4630;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-dark{background:var(--navy);padding:24px} .ds-btn-ghost{display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 var(--display);text-decoration:none;background:transparent;color:var(--on-dark);border:2px solid rgba(244,246,241,.7);transition:background-color .2s,border-color .2s} .ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)} .ds-btn-ghost:focus-visible{outline:3px solid var(--amber);outline-offset:3px}"
     },
     {
-      "name": "Green Button",
-      "kind": "button",
-      "refersTo": "button-green",
-      "description": "Action on cream grounds.",
-      "html": "<a class=\"ds-btn ds-btn-green\" href=\"#\">Click to see more of our work</a>",
-      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 24px;border-radius:999px;border:2px solid transparent;font:800 17px/1.2 var(--font);text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s,transform .18s}.ds-btn:active{transform:scale(.98)}.ds-btn svg{width:20px;height:20px}.ds-green-ground{background:var(--green-800);padding:24px;display:flex;gap:10px;flex-wrap:wrap}.ds-green-ground :focus-visible{outline:3px solid var(--maple-bright);outline-offset:3px}.ds-btn-green{background:var(--green-800);color:var(--cream);border-color:var(--green-800)}.ds-btn-green:hover{background:var(--green-600);border-color:var(--green-600)}.ds-btn-green:focus-visible{outline:3px solid var(--maple);outline-offset:3px}"
-    },
-    {
-      "name": "Service Row",
-      "kind": "custom",
-      "refersTo": "service-arrow",
-      "description": "Text-a-quote list row; only the arrow disc changes on hover/focus.",
-      "html": "<div class=\"ds-rows\"><h3 class=\"ds-group\">Decks</h3><a class=\"ds-row\" href=\"#\">Deck repairs<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a><a class=\"ds-row\" href=\"#\">New decks<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></div>",
-      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-rows{background:var(--cream);padding:20px;font-family:var(--font)}.ds-group{margin:0;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:800;padding-bottom:10px;border-bottom:2px solid var(--ink)}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:10px 0;border-bottom:1px solid var(--cream-ink);text-decoration:none;font-size:22px;font-weight:750;color:var(--ink);outline:none}.ds-arrow{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--cream-2);color:var(--ink);transition:background-color .18s,color .18s}.ds-arrow svg{width:18px;height:18px}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:var(--maple);color:#fff}.ds-row:focus-visible .ds-arrow{outline:3px solid var(--maple);outline-offset:3px}"
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Field Mist input with a Forest Green border on hover and focus.",
+      "html": "<label class=\"ds-field\"><span>Where is the job?</span><input type=\"text\" placeholder=\"Street or area\"></label>",
+      "css": ":host{--paper:#f4f6f2;--card:#ffffff;--field:#e5ece5;--ink:#13301f;--soft:#4a5a50;--navy:#1d4630;--deep:#122c1e;--on-dark:#f4f6f1;--on-dark-soft:#c6d5c9;--amber:#f2a93b;--amber-2:#f7bd62;--focus:#1d4630;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-field{display:grid;gap:8px;background:var(--card);padding:24px;border-radius:24px} .ds-field span{font:400 17px/1.2 var(--display);color:var(--ink)} .ds-field input{font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:52px;transition:border-color .15s} .ds-field input::placeholder{color:var(--soft)} .ds-field input:hover,.ds-field input:focus{outline:none;border-color:var(--focus)}"
     },
     {
       "name": "Job Chip",
       "kind": "chip",
       "refersTo": "chip",
-      "description": "Multi-select job type on the green quote form.",
-      "html": "<div class=\"ds-green-ground\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Deck repair</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>New deck</span></label></div>",
-      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-chip{position:relative;font-family:var(--font)}.ds-chip input{position:absolute;opacity:0;width:1px;height:1px}.ds-chip span{display:flex;align-items:center;min-height:46px;padding:10px 16px;border-radius:999px;border:2px solid rgba(245,239,226,.35);color:var(--cream);font-weight:700;font-size:17px;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chip:hover span,.ds-chip input:focus-visible+span{border-color:var(--maple-bright)}.ds-chip input:focus-visible+span{box-shadow:0 0 0 3px rgba(240,138,90,.35)}.ds-chip input:checked+span{background:var(--cream);color:var(--green-800);border-color:var(--cream)}.ds-chip input:checked+span::before{content:\"\";width:16px;height:16px;margin-right:8px;background:var(--maple);-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-45 -52 90 90'%3E%3Cpath d='M0-50L7-37L13-40L11-18L22-28L25-22L36-25L33-12L42-8L27 2L30 8L15 9L12 15L16 20L3 16L3 34L-3 34L-3 16L-16 20L-12 15L-15 9L-30 8L-27 2L-42-8L-33-12L-36-25L-25-22L-22-28L-11-18L-13-40L-7-37Z'/%3E%3C/svg%3E\") center/contain no-repeat;mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-45 -52 90 90'%3E%3Cpath d='M0-50L7-37L13-40L11-18L22-28L25-22L36-25L33-12L42-8L27 2L30 8L15 9L12 15L16 20L3 16L3 34L-3 34L-3 16L-16 20L-12 15L-15 9L-30 8L-27 2L-42-8L-33-12L-36-25L-25-22L-22-28L-11-18L-13-40L-7-37Z'/%3E%3C/svg%3E\") center/contain no-repeat}.ds-chip:hover input:checked+span{border-color:var(--maple-bright)}"
+      "description": "Pill radio choice; selected flips to ink with a drawn check.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\">Deck repair</label><label class=\"ds-chip ds-on\">New deck</label></div>",
+      "css": ":host{--paper:#f4f6f2;--card:#ffffff;--field:#e5ece5;--ink:#13301f;--soft:#4a5a50;--navy:#1d4630;--deep:#122c1e;--on-dark:#f4f6f1;--on-dark-soft:#c6d5c9;--amber:#f2a93b;--amber-2:#f7bd62;--focus:#1d4630;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-chips{display:flex;gap:10px;flex-wrap:wrap;background:var(--card);padding:24px} .ds-chip{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s,color .15s} .ds-chip:hover{border-color:var(--focus)} .ds-chip.ds-on{background:var(--ink);color:#fff} .ds-chip.ds-on::before{content:\"\";width:12px;height:7px;border:solid currentColor;border-width:0 0 2.5px 2.5px;transform:rotate(-45deg) translateY(-2px);margin-right:10px}"
     },
     {
-      "name": "Text Field on Green",
-      "kind": "input",
-      "refersTo": "input-on-green",
-      "description": "Quote form field; outlined by border colour on hover/focus.",
-      "html": "<div class=\"ds-green-ground\" style=\"display:block\"><label class=\"ds-lbl\" for=\"ds-w\">Where is the job?</label><input class=\"ds-input\" id=\"ds-w\" type=\"text\" placeholder=\"Town or street, e.g. Rothesay\"></div>",
-      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-lbl{display:block;font:800 17px/1.4 var(--font);color:var(--cream);margin-bottom:10px}.ds-input{width:100%;box-sizing:border-box;min-height:54px;padding:14px 16px;border-radius:12px;border:2px solid rgba(245,239,226,.35);background:rgba(10,25,16,.35);color:var(--cream);font:500 17px/1.4 var(--font);caret-color:var(--maple-bright);transition:border-color .15s}.ds-input::placeholder{color:#a6b3a8}.ds-input:hover,.ds-input:focus{border-color:var(--maple-bright);outline:none}.ds-input:focus{box-shadow:0 0 0 3px rgba(240,138,90,.3)}"
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Cal Sans link row on green; only the round arrow reacts.",
+      "html": "<div class=\"ds-rows\"><a class=\"ds-row\" href=\"#\">New decks<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a><a class=\"ds-row\" href=\"#\">Stairs &amp; railings<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ":host{--paper:#f4f6f2;--card:#ffffff;--field:#e5ece5;--ink:#13301f;--soft:#4a5a50;--navy:#1d4630;--deep:#122c1e;--on-dark:#f4f6f1;--on-dark-soft:#c6d5c9;--amber:#f2a93b;--amber-2:#f7bd62;--focus:#1d4630;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-rows{background:var(--navy);padding:8px 24px} .ds-row+.ds-row{border-top:1px solid rgba(255,255,255,.12)} .ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:10px 0;text-decoration:none;color:var(--on-dark);font:400 22px/1.2 var(--display);outline:none} .ds-arrow{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:var(--on-dark);transition:background-color .2s,color .2s} .ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:var(--amber);color:var(--ink)} .ds-row:focus-visible .ds-arrow{outline:3px solid var(--amber);outline-offset:3px}"
     },
     {
-      "name": "Header Bar",
-      "kind": "nav",
-      "description": "Brand lockup left, phone link right, on forest.",
-      "html": "<div class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><svg viewBox=\"-50 -56 100 100\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0-50L7-37L13-40L11-18L22-28L25-22L36-25L33-12L42-8L27 2L30 8L15 9L12 15L16 20L3 16L3 34L-3 34L-3 16L-16 20L-12 15L-15 9L-30 8L-27 2L-42-8L-33-12L-36-25L-25-22L-22-28L-11-18L-13-40L-7-37Z\" transform=\"translate(0 -6) scale(.78)\"/><path d=\"M-46 36L0 4L46 36\" fill=\"none\" stroke=\"#173524\" stroke-width=\"11\"/><path d=\"M-44 38L0 8L44 38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"/></svg><span><b>MAPLE</b><small>OUTDOOR BUILDS</small></span></a><a class=\"ds-phone\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1z\"/></svg>506-607-1818</a></div>",
-      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;background:var(--green-800);font-family:var(--font)}.ds-brand{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:var(--cream)}.ds-brand svg{width:40px;height:40px}.ds-brand b{display:block;font-weight:900;font-size:22px;letter-spacing:.04em;line-height:1}.ds-brand small{display:block;font-weight:700;font-size:10.5px;letter-spacing:.22em;line-height:1;margin-top:4px;opacity:.85}.ds-phone{display:flex;align-items:center;gap:7px;min-height:44px;color:var(--cream);font-weight:800;font-size:16px;text-decoration:none;font-variant-numeric:tabular-nums}.ds-phone svg{width:17px;height:17px;color:#e9b48f}.ds-phone:hover{color:#fff}.ds-phone:hover svg{color:var(--maple-bright)}.ds-phone:focus-visible{outline:3px solid var(--maple-bright);outline-offset:3px}"
-    },
-    {
-      "name": "Prints on Boards",
+      "name": "Photo Card",
       "kind": "card",
-      "description": "Photos laid on deck boards as rotated paper prints (CSS stripe fallback; the live build paints the boards on canvas).",
-      "html": "<div class=\"ds-boards\"><figure class=\"ds-print ds-p1\"><div class=\"ds-ph\"></div><figcaption>Before</figcaption></figure><figure class=\"ds-print ds-p2\"><div class=\"ds-ph\"></div><figcaption>After</figcaption></figure></div>",
-      "css": ":host{--green-900:#132c1e;--green-800:#173524;--green-600:#2c5c3e;--cream:#f5efe2;--cream-2:#ebe2cf;--cream-ink:#d9cfb8;--ink:#172a1f;--ink-soft:#43574a;--maple:#c8442a;--maple-bright:#f08a5a;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-boards{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:28px 22px 34px;border-radius:14px;background:#2b1d12 repeating-linear-gradient(180deg,#a8743f 0 37px,#2b1d12 37px 40px);box-shadow:0 18px 40px -18px rgba(40,25,10,.55)}.ds-print{margin:0;background:#fbf8f1;padding:9px 9px 0;border-radius:3px;box-shadow:0 2px 3px rgba(30,15,5,.35),0 16px 30px -10px rgba(30,15,5,.6)}.ds-ph{aspect-ratio:720/660;background:#cdbd9e}.ds-print figcaption{padding:7px 4px 9px;font:900 15px/1.2 var(--font);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}.ds-p1{transform:rotate(-2.2deg)}.ds-p2{transform:rotate(1.8deg)}"
+      "refersTo": "photo-card",
+      "description": "24px photo card with a bottom deep-forest scrim and a Cal Sans caption.",
+      "html": "<figure class=\"ds-shot\"><div class=\"ds-img\"></div><b>After</b></figure>",
+      "css": ":host{--paper:#f4f6f2;--card:#ffffff;--field:#e5ece5;--ink:#13301f;--soft:#4a5a50;--navy:#1d4630;--deep:#122c1e;--on-dark:#f4f6f1;--on-dark-soft:#c6d5c9;--amber:#f2a93b;--amber-2:#f7bd62;--focus:#1d4630;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-shot{position:relative;margin:0;width:260px;aspect-ratio:12/11;border-radius:24px;overflow:hidden;background:var(--deep)} .ds-img{position:absolute;inset:0;background:linear-gradient(135deg,#7a5a3a,#b08458)} .ds-shot::after{content:\"\";position:absolute;inset:auto 0 0;height:45%;background:linear-gradient(180deg,transparent,rgba(12,30,20,.72))} .ds-shot b{position:absolute;left:20px;bottom:16px;z-index:1;font:400 22px/1 var(--display);color:#fff}"
+    },
+    {
+      "name": "Step Number",
+      "kind": "custom",
+      "refersTo": "step-badge",
+      "description": "48px amber disc with an ink Cal Sans numeral, on deep forest.",
+      "html": "<div class=\"ds-step\"><span class=\"ds-n\">1</span><div><b>Send us a photo.</b><span>Tell us what you need and where.</span></div></div>",
+      "css": ":host{--paper:#f4f6f2;--card:#ffffff;--field:#e5ece5;--ink:#13301f;--soft:#4a5a50;--navy:#1d4630;--deep:#122c1e;--on-dark:#f4f6f1;--on-dark-soft:#c6d5c9;--amber:#f2a93b;--amber-2:#f7bd62;--focus:#1d4630;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-step{display:grid;grid-template-columns:48px 1fr;gap:16px;background-color:var(--deep);background-image:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);color:var(--on-dark-soft);padding:24px;font:16px/1.7 var(--text)} .ds-n{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);font:400 20px/1 var(--display)} .ds-step b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}"
+    },
+    {
+      "name": "Floating Text Circle",
+      "kind": "button",
+      "refersTo": "text-float",
+      "description": "The one floating control: 60px amber circle, bottom right.",
+      "html": "<a class=\"ds-float\" href=\"#\" aria-label=\"Text us\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ":host{--paper:#f4f6f2;--card:#ffffff;--field:#e5ece5;--ink:#13301f;--soft:#4a5a50;--navy:#1d4630;--deep:#122c1e;--on-dark:#f4f6f1;--on-dark-soft:#c6d5c9;--amber:#f2a93b;--amber-2:#f7bd62;--focus:#1d4630;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);box-shadow:0 10px 28px rgba(10,30,18,.3)} .ds-float:focus-visible{outline:3px solid #fff;outline-offset:2px;box-shadow:0 0 0 8px var(--ink),0 10px 28px rgba(10,30,18,.3)}"
     }
   ],
   "narrative": {
-    "northStar": "The October Deck",
-    "overview": "A Saint John deck in autumn: fresh pressure-treated boards, maple leaves that keep falling on them, and a crew that sweeps them off. The material is the brand. Boards are painted live on canvas, leaves are physical objects you can push, and the page's two grounds are the forest green and cream of the company's own profile art (leaf over roofline). Everything else stays quiet so the deck can be the thing you touch.\n\nDensity is phone-first and generous: one column, big tap targets (44px minimum, 56px buttons), short uppercase headings set heavy. Colour is restrained; green and cream carry the page, harvest amber picks out the second line of headings on green, and maple red appears only when the visitor is pointing at something.",
+    "northStar": "The Calm Yard",
+    "overview": "The page is a stack of full-width colour bands that alternate between off-white paper and two forest greens, the same green-and-cream as the crew's own profile art. Nothing competes with the work: the hero is their finished deck under a deep forest overlay, the work band is their before, after and finished photos in big rounded cards, and every band holds one heading, a short line, and one clear thing to do.\n\nMaple amber is the only warm colour, and it shows up as a filled shape (a button, a step number, the floating text circle, a row's arrow on hover), never as a field of colour. Type is Cal Sans for anything that names or sells, and the system sans at a generous 16/1.7 for everything that explains. Motion happens once and then settles: the hero headline's letters bounce in, things below the first screen fade up 12px, and after that the page holds still.\n\nDensity is low on purpose. A visitor on a phone in Facebook's in-app browser should see one idea per screen and a big target under their thumb.",
     "keyCharacteristics": [
-      "Two grounds: forest green (hero, close, footer) and cream (content). No third surface besides the boards.",
-      "Real material, drawn in code: canvas deck boards with grain, knots, screws, butt joints and sunlight.",
-      "Maple leaves as interactive sprites, in nine autumn colourways.",
-      "Maple red is a state colour, never a resting colour.",
-      "Heavy uppercase system type; no web fonts."
+      "Full-width paper and forest-green bands; no boxed sections floating on a ground.",
+      "Amber as a fill (text on it is ink); amber-ink when amber has to be text on a light background.",
+      "Soft, generous shapes: 24px cards, pill buttons and chips, 10px fields.",
+      "Flat surfaces. The floating text circle is the only thing with a shadow.",
+      "Real photos only, under a forest overlay or a bottom scrim so the type stays readable."
     ],
     "rules": [
       {
-        "name": "The Maple Is A Hand Rule",
-        "body": "Maple red (#c8442a on cream, #f08a5a on green) appears only on hover, focus, selection, or as the small leaf mark. Nothing rests in red. Use the bright variant on green, the deep one on cream (`.on-green` swaps the focus colour).",
+        "name": "The Amber Is a Fill Rule",
+        "body": "Maple amber appears as a solid shape with Forest Ink on it, or as accent text on a dark band. On a light ground, amber text becomes Amber Ink. Amber never fills a band or a card.",
         "section": "colors"
       },
       {
-        "name": "The Two Grounds Rule",
-        "body": "Sections are either forest or cream. Wood is the only other surface, and it is always boards.",
+        "name": "The Green Bands Rule",
+        "body": "Every band is one of three grounds: Paper, Forest Green, or Deep Forest with its line texture. Text on green uses the on-dark pair, never the light-ground greys.",
         "section": "colors"
       },
       {
-        "name": "The Heavy Caps Rule",
-        "body": "All h1-h3 are uppercase, 900, letter-spacing -0.01em, leading under 1. Weight contrast (900 against 400) is the hierarchy; do not add a second family.",
+        "name": "The Cal Sans Speaks Rule",
+        "body": "Anything a visitor reads as a name, a heading, an action or a service is Cal Sans at 400. Explanations are system sans. No other weights of Cal Sans exist; never fake-bold it.",
         "section": "typography"
       },
       {
-        "name": "The Only Things That Cast Shadows Rule",
-        "body": "Shadows are for objects on the deck (prints, leaves, the boards themselves). Buttons, rows and fields never cast one.",
+        "name": "The Uppercase Is Rare Rule",
+        "body": "Uppercase with tracking appears only on the service group labels and the brand sub-line. Headings and buttons are sentence case.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Floating Thing Rule",
+        "body": "Only the floating text circle casts a shadow. Cards, buttons, fields and rows stay flat at rest and on hover.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do keep every surface forest, cream, or boards.",
-      "Do reserve Maple (#c8442a) and Maple Bright (#f08a5a) for hover, focus, selection and the leaf mark.",
-      "Do set headings 900 uppercase with leading under 1, and take the second line to Harvest (#e9b48f) on green.",
-      "Do put photos on the boards as rotated prints, never as bare tiles.",
-      "Do run new canvas scenes through the shared Scene and loop so they pause off screen.",
-      "Do keep tap targets at 44px minimum and primary buttons at 56px."
+      "**Do** keep every band on Paper, Forest Green, or Deep Forest with its faint line texture.",
+      "**Do** put Forest Ink on amber, and use Amber Ink whenever amber has to be text on a light ground.",
+      "**Do** set names, headings, buttons and services in Cal Sans 400, and running text in the system sans at 16/1.7.",
+      "**Do** use pill buttons (56px) and pill chips (48px), 10px fields on Field Mist, and 24px cards.",
+      "**Do** put photos under a deep-forest overlay or a bottom scrim when text sits on them.",
+      "**Do** make service rows react only through their round arrow.",
+      "**Do** outline form controls in Forest Green on hover and focus; use an amber outline on dark bands.",
+      "**Do** keep motion to the hero letter bounce-in, one 12px fade-up below the first screen, and the floating circle's slide-in, all switched off under reduced motion."
     ],
     "donts": [
-      "Don't put red on anything at rest, including headings, badges or backgrounds.",
-      "Don't change a service row's background or outline on hover; the arrow is the only change.",
-      "Don't ring form fields with an outline; they change border colour and gain the soft halo.",
-      "Don't give buttons, rows or fields shadows.",
-      "Don't add a web font or a second family."
+      "**Don't** fill a band, card or large area with amber, or set amber text on Paper.",
+      "**Don't** add shadows to cards, buttons, fields or rows; the floating text circle is the only lifted thing.",
+      "**Don't** highlight a whole service row on hover; only the arrow changes.",
+      "**Don't** turn the floating text circle into a bottom bar or add a second floating control.",
+      "**Don't** use bold Cal Sans or uppercase headings.",
+      "**Don't** add hover states for touch: hover styles live only under a real pointer."
     ]
   }
 }

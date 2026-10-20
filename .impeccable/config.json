@@ -29,6 +29,15 @@
         ],
         "createdAt": "2026-10-20T01:24:41.461Z",
         "reason": "Ellie's calm band style (pitch-site calm-photo-style.md item 2): faint diagonal line texture on deep bands, chosen 2026-10-19"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T01:36:33.179Z",
+        "reason": "Agent judgment: detector reads only fixed 12-20px sizes; headings are clamp() Cal Sans at 30-80px"
       }
     ]
   }

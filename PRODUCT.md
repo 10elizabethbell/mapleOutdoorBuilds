@@ -19,12 +19,12 @@ A local outdoor crew that fixes and builds decks and cleans up properties, no jo
 - Contact: phone 506-607-1818, accepts calls and texts (Canadian number, +1). Facebook Messenger via the business page. No email known. No booking system.
 - Services (from their post caption, verbatim): Property cleanups; Yard cleanup & removal; Junk removal & hauling; Deck repairs & improvements; "Small jobs welcome!"
 - Services (from their Facebook page description and profile image): decks, repairs, railings, extensions; new decks, repairs & rebuilds, stairs, railings, extensions, resurfacing.
-- Area: Saint John, NB and surrounding areas (brief, page description). Their profile image also lists Moncton, Dieppe, Riverview.
+- Area: Saint John, NB and surrounding areas (brief, page description). Their profile image also lists Moncton, Dieppe, Riverview (unconfirmed; kept off the page until the owner confirms).
 - No prices published; "free estimate" only. No hours, no reviews, no owner name, no years in business.
 
 ## Brand commitments
 - Name on the Facebook page: "Maple Outdoor Builds". (Profile image reads "Maple Builders" — inferred to be an earlier/alternate name; the page name is used.)
-- Profile image: deep forest green and cream, a maple leaf over a house roofline, wood decks, evergreens. (Muse's brief said maple-leaf red from 🍁 emoji; the actual artwork is green — green is used, maple red/amber only as accent. Inferred.)
+- Profile image: deep forest green and cream, a maple leaf over a house roofline, wood decks, evergreens. (Muse's brief said maple-leaf red from 🍁 emoji; the actual artwork is green — green is used for the bands, maple amber as the one warm accent. Inferred.)
 - Voice: casual, upbeat, "we/our" (their posts say "Send us a message"); emoji-light on the site.
 
 ## Evidence on hand
