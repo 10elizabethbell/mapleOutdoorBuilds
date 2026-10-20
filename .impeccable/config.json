@@ -4,22 +4,22 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "overused-font",
+        "rule": "gray-on-color",
         "value": "*",
         "files": [
           "index.html"
         ],
-        "createdAt": "2026-10-17T22:24:30.256Z",
-        "reason": "Ellie's house style (pitch-site ellie-taste.md §2): system font stack on every pitch site for speed on cellular"
+        "createdAt": "2026-10-20T01:24:41.323Z",
+        "reason": "Agent judgment: #c6d5c9 is a green-tinted on-dark text (6.9:1 on #1d4630), the calm style's on-dark-soft role"
       },
       {
-        "rule": "cream-palette",
+        "rule": "cramped-padding",
         "value": "*",
         "files": [
           "index.html"
         ],
-        "createdAt": "2026-10-17T22:24:30.328Z",
-        "reason": "Client brand: cream comes from Maple Outdoor Builds' own Facebook profile art (green + cream)"
+        "createdAt": "2026-10-20T01:24:41.393Z",
+        "reason": "Agent judgment: work photo cards are full-bleed photos by design (calm-photo-style.md component 5); the title sits 20px inset"
       },
       {
         "rule": "repeating-stripes-gradient",
@@ -27,215 +27,8 @@
         "files": [
           "index.html"
         ],
-        "createdAt": "2026-10-17T22:24:30.399Z",
-        "reason": "Literal deck boards: no-JS/pre-paint fallback for the canvas deck, same material as the painted boards"
-      },
-      {
-        "rule": "flat-type-hierarchy",
-        "value": "*",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:25:44.431Z",
-        "reason": "Agent judgment: detector reads only fixed px sizes (15-22px body/labels); hierarchy comes from clamp() display headings at 34-96px"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgb(255, 247, 234)",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:57.207Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgb(205, 189, 158)",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:57.278Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgba(10, 25, 16, 0.35)",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:57.350Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgb(207, 214, 204)",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:57.424Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgb(169, 181, 171)",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:57.496Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "#fff",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:57.569Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgba(10,22,15,.55)",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:57.639Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgba(30,15,5,.9)",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:57.709Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgba(30,18,8,.5)",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:57.776Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "#a6b3a8",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:57.845Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "10.5px",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:57.915Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "20px",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:57.983Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "9.5px",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:58.051Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "16px",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:58.125Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "clamp(26px,7vw,40px)",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:58.196Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "18px",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:58.267Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "12px",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:58.337Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "clamp(56px,4.8vw,76px)",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:34:58.407Z",
-        "reason": "Agent judgment: one-off value in the shipped page that DESIGN.md (derived from it) chose not to canonize; intentional (logo lockup / desktop sizes)"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "26px",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:35:08.641Z",
-        "reason": "Agent judgment: clamp endpoints of the service-area line and desktop hero headline; intentional one-offs"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "40px",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:35:08.712Z",
-        "reason": "Agent judgment: clamp endpoints of the service-area line and desktop hero headline; intentional one-offs"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "56px",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:35:08.781Z",
-        "reason": "Agent judgment: clamp endpoints of the service-area line and desktop hero headline; intentional one-offs"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "76px",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-17T22:35:08.852Z",
-        "reason": "Agent judgment: clamp endpoints of the service-area line and desktop hero headline; intentional one-offs"
+        "createdAt": "2026-10-20T01:24:41.461Z",
+        "reason": "Ellie's calm band style (pitch-site calm-photo-style.md item 2): faint diagonal line texture on deep bands, chosen 2026-10-19"
       }
     ]
   }
